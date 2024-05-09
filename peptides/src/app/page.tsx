@@ -510,7 +510,7 @@ export default function Home() {
             <div className="w-2/6 text-left">
               <Image src="/logo.png" alt="Logo" width={263} height={31} />
             </div>
-            <div className="w-2/6 text-center">
+            <div className="w-2/6 text-left">
               <div className="small-text text-gray-900 mr-10">
                 <div className="text-gray-900 small-text-title font-bold">
                   About us
@@ -520,8 +520,8 @@ export default function Home() {
                 Empower your well-being through knowledge with us.
               </div>
             </div>
-            <div className="w-2/6 text-right">          
-            <div className="small-text text-gray-900 mr-10">
+            <div className="w-2/6 text-left">          
+            <div className="small-text text-gray-900 mr-10 float-end">
               <div className="text-gray-900 small-text-title font-bold">
                 Links
               </div>
