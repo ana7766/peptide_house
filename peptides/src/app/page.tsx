@@ -119,16 +119,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-24"></div>        
+      <div className="h-24"></div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-          <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+        <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
           Peptides for Muscle Growth
-          </div>
-          
-          <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
-            <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-          </div>
         </div>
+
+        <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
+          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+        </div>
+      </div>
       <div className="product-sections">
         <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-5xl w-full">
           <div className="partition small-text text-gray-900 ml-10">
@@ -434,29 +434,29 @@ export default function Home() {
           <EnrollmentForm />
         </div>
         <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
-        <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-5xl w-full">
-  <div className="w-full md:w-2/6 text-left">
-    <Image src="/logo.png" alt="Logo" width={263} height={31} />
-  </div>
-  <div className="w-full md:w-2/6 text-left md:mt-0 mt-4">
-    <div className="small-text text-gray-900">
-      <div className="text-gray-900 small-text-title font-bold">
-        About us
-      </div>               
-      We&apos;re dedicated to educating and informing, providing concise insights into the benefits of peptides. Empower your well-being through knowledge with us.
-    </div>
-  </div>
-  <div className="w-full md:w-2/6 text-left mt-4">
-    <div className="small-text text-gray-900 md:float-end">
-      <div className="text-gray-900 small-text-title font-bold">
-        Links
-      </div>
-      Telephone
-      <div className="h-1"></div>
-      Email
-    </div>
-  </div>
-</div>
+          <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-5xl w-full">
+            <div className="w-full md:w-2/6 text-left">
+              <Image src="/logo.png" alt="Logo" width={263} height={31} />
+            </div>
+            <div className="w-full md:w-2/6 text-left md:mt-0 mt-4">
+              <div className="small-text text-gray-900">
+                <div className="text-gray-900 small-text-title font-bold">
+                  About us
+                </div>
+                We&apos;re dedicated to educating and informing, providing concise insights into the benefits of peptides. Empower your well-being through knowledge with us.
+              </div>
+            </div>
+            <div className="w-full md:w-2/6 text-left mt-4">
+              <div className="small-text text-gray-900 md:float-end">
+                <div className="text-gray-900 small-text-title font-bold">
+                  Links
+                </div>
+                Telephone
+                <div className="h-1"></div>
+                Email
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
