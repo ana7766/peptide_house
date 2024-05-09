@@ -82,4 +82,8 @@ body {
   .product-sections{
   height: fit-content;  
   }
+
+  .partition{
+    width: 95%;
+  }
  }

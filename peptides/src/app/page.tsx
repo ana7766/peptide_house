@@ -28,7 +28,7 @@ export default function Home() {
               style={{
                 backgroundImage: 'url("/muscle1.2.png")',
                 maxWidth: "389px",
-                width:"100%",
+                width: "100%",
                 height: "384px",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -77,7 +77,7 @@ export default function Home() {
             style={{
               backgroundImage: 'url("/bottle1.png")',
               maxWidth: "609px",
-              width:"100%",
+              width: "100%",
               height: "598px",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -122,7 +122,7 @@ export default function Home() {
       <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-5xl w-full">
-          <div className="partition small-text text-gray-900 mr-10">
+          <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
               CJC 1295
             </div>
@@ -149,7 +149,7 @@ export default function Home() {
             style={{
               backgroundImage: 'url("/bottle2.png")',
               maxWidth: "609px",
-              width:"100%",
+              width: "100%",
               height: "598px",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -164,7 +164,7 @@ export default function Home() {
             style={{
               backgroundImage: 'url("/bottle3.png")',
               maxWidth: "609px",
-              width:"100%",
+              width: "100%",
               height: "598px",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -194,7 +194,7 @@ export default function Home() {
       <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-5xl w-full">
-          <div className="partition small-text text-gray-900 mr-10">
+          <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
               Tesamorelin
             </div>
@@ -218,7 +218,7 @@ export default function Home() {
             style={{
               backgroundImage: 'url("/bottle4.png")',
               maxWidth: "609px",
-              width:"100%",
+              width: "100%",
               height: "598px",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -233,7 +233,7 @@ export default function Home() {
             style={{
               backgroundImage: 'url("/bottle5.png")',
               maxWidth: "609px",
-              width:"100%",
+              width: "100%",
               height: "598px",
               backgroundSize: "cover",
               backgroundPosition: "center",

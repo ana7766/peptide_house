@@ -32,7 +32,7 @@ const EnrollmentForm: React.FC = () => {
                 Enroll now to discover a comprehensive list of peptides for muscle
                 mass. Empower your journey toward optimal health. <span className="font-bold">Join us today!</span>
             </div>
-            <div className="flex flex-col md:flex-row md:items-center justify-center">
+            <div className="flex flex-col md:flex-row items-center justify-center">
                 <input
                     type="text"
                     placeholder="First name*"
