@@ -38,7 +38,7 @@ export default function Home() {
             <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
           </div>
           <div className="container mx-auto flex justify-between p-4 max-w-5xl w-full">
-            <div className="text-gray-900" style={{ fontSize: "20px" }}>
+            <div className="text-gray-900 text-xl">
               Find out what are best peptides for muscle grow.
             </div>
           </div>
@@ -369,6 +369,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="h-16"></div>
       </div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
         <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
@@ -404,8 +405,9 @@ export default function Home() {
           <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
         </div>
       </div>
-      <div className="relative bg-gray-300 p-7 h-96">
-        <div className="absolute bottom-52 left-1/2 transform -translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5">
+      <div className="relative bg-neutral-100 p-7">
+        <div className="h-96"></div>
+        <div className="absolute bottom-72 left-1/2 transform -translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5">
           <EnrollmentForm />
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-4 w-full">
