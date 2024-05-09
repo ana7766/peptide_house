@@ -1,0 +1,538 @@
+import React from "react";
+import Image from "next/image";
+import dynamic from 'next/dynamic';
+/* import Card from "./components/card"; */
+
+
+
+
+
+export default function Home() {
+  return (
+    <main>
+      <div className="flex flex-col items-center justify-between p-14">
+        <nav className="max-w-5xl w-full mx-auto flex justify-between items-center">
+          <div>
+            <Image src="/logo.png" alt="Logo" width={309} height={37} />
+          </div>
+          <ul className="flex space-x-6">
+            <li>
+              <a href="#" className="text-gray-800">
+                What Are Peptides
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-800">
+                Peptides for Muscle Grow
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-800">
+                Muscle Grow
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-800">
+                FAQ&apos;s
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <div
+          className="center"
+          style={{ backgroundImage: 'url("/layer1.png")' }}
+        >
+          <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+            <div className="center-text partition">
+              The best Peptides{" "}
+              <div>
+                {" "}
+                for{" "}
+                <span className="text-blue-300 font-bold">Muscle Growth</span>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: 'url("/muscle1.2.png")',
+                width: "389px",
+                height: "384px",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+          </div>
+          <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+            <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+          </div>
+          <div className="container mx-auto flex justify-between p-4 max-w-5xl w-full">
+            <div className="text-gray-900" style={{ fontSize: "20px" }}>
+              Find out what are best peptides for muscle grow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+          <div className="container mx-auto mid-size-text font-bold text-gray-300 flex items-center">
+            Enroll now to discover a comprehensive list of peptides
+          </div>
+          <div
+            style={{
+              backgroundImage: 'url("/arrow_blue.png")',
+              width: "51.5px",
+              height: "15px",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+      </div>
+      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+          What are Peptides?
+        </div>
+      </div>
+      <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
+        <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+      </div>
+      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="small-text text-gray-900">
+          Peptides are small biological molecules that act as messengers in the
+          body, facilitating communication between different parts. Typically
+          composed of just 2-3 amino acids connected by peptide bonds, they play
+          a crucial role in telling our cells what to do.
+          <br></br>
+          <br></br>
+          These sign aling molecules are essential for various critical
+          functions, such as repairing tissues and regulating hormones.
+          Additionally, they release anti-inflammatory compounds for healing. In
+          simpler terms, peptides are like tiny communicators that help our body
+          perform important tasks
+        </div>
+      </div>
+      <div>
+        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+          <div
+            style={{
+              backgroundImage: 'url("/bottle1.png")',
+              width: "609px",
+              height: "598px",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+          <div className="partition small-text text-gray-900 ml-10">
+            Understanding peptides is like unveiling the building blocks of
+            life:
+            <br></br>
+            <br></br>
+            <ul className="list-none">
+              <li className="flex items-center">
+                <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>Amino acids stand alone as individual molecules.</span>
+              </li>
+              <br></br>
+              <li className="flex items-center">
+                <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>
+                  {" "}
+                  Peptides, on the other hand, are usually short chains, ranging
+                  from 2 to 50 amino acids.{" "}
+                </span>
+              </li>
+              <br></br>
+              <li className="flex items-center">
+                <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>
+                  {" "}
+                  Proteins, the heavyweight champions, are generally long
+                  chains, packing in 50 or more amino acids.
+                </span>
+              </li>
+            </ul>
+            <br></br>
+            <br></br>
+            Now, here&apos;s a surprising fact: while some may see peptides as
+            uncharted territory in alternative medicine, they&apos;ve been
+            life-saving heroes for over a century. Think about insulin and
+            penicillin – both peptides that have brought invaluable benefits to
+            modern society.
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+          <div className="partition small-text text-gray-900 mr-10">
+            <div className="text-gray-900 small-text-title font-bold">
+              CJC 1295
+            </div>
+            <br></br>
+            CJC 1295 which is also known as drug affinity complex: growth
+            hormone-releasing factor (DAC:GRF), is a synthetic analogue of
+            growth hormone releasing hormone (GHRH). It also happens to be a
+            growth hormone secretagogue, meaning that it acts as a secretion
+            inducer for growth hormone. This particular peptide was developed by
+            ConjuChem Biotechnologies, a medical biotech company that is based
+            out of Quebec, Canada.
+            <br></br>
+            <br></br>
+            CJC 1295 is known to increase plasma growth hormone as well as
+            insulin like growth factor one within animals. The peptide is known
+            to have a half-life of roughly six to eight hours and through the
+            administration of multiple doses insulin like growth factor one, or
+            IGF-1 for short, was found to remain elevated for up to twenty eight
+            days. The initial research and trials into CJC 1295 were to
+            investigate it as a treatment for lipodystrophy and growth hormone
+            deficiency.
+          </div>
+          <div
+            style={{
+              backgroundImage: 'url("/bottle2.png")',
+              width: "609px",
+              height: "598px",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+      </div>
+
+      <div>
+        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+          <div
+            style={{
+              backgroundImage: 'url("/bottle3.png")',
+              width: "609px",
+              height: "598px",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+
+          <div className="partition small-text text-gray-900 ml-10">
+            <div className="text-gray-900 small-text-title font-bold">
+              Ipamorelin
+            </div>
+            <br></br>
+            Ipamorelin, whose developmental code name is NNC26-0161, is a
+            peptide selective agonist of the ghrelin or growth hormone
+            secretagogue receptor and is considered to be a growth hormone
+            secret agogue. This means that it binds to the ghrelin or growth
+            hormone secretion receptors and produces more growth hormone through
+            a biological response
+            <br></br>
+            <br></br>
+            Like CJC 1295, Ipamorelin has been proven to increase plasma growth
+            hormone (GH) levels as well as stimulate weight gain. Ipamorelin
+            does not affect prolactin, follicle stimulating hormone, thyroid
+            stimulating hormone, or luteinizing hormone.
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+          <div className="partition small-text text-gray-900 mr-10">
+            <div className="text-gray-900 small-text-title font-bold">
+              Tesamorelin
+            </div>
+            <br></br>
+            Tesamorelin is a remarkable analog of growth hormone-releasing
+            hormone (GHRH) that has demonstrated significant clinical efficacy
+            in the treatment of HIV-associated lipodystrophy. This condition is
+            characterized by abnormal fat distribution, and Tesamorelin offers
+            hope to individuals affected by addressing dysfunctional fat
+            deposition.
+            <br></br>
+            <br></br>
+            Furthermore, scientists are actively exploring Tesamorelin&apos;s
+            potential to enhance the health of peripheral nerves, a crucial
+            component of our body&apos;s communication network. Additionally,
+            ongoing research suggests that Tesamorelin may have the ability to
+            slow the progression of mild cognitive impairment, highlighting its
+            potential in diverse areas of health and wellness.
+          </div>
+          <div
+            style={{
+              backgroundImage: 'url("/bottle4.png")',
+              width: "609px",
+              height: "598px",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+      </div>
+
+      <div>
+        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+          <div
+            style={{
+              backgroundImage: 'url("/bottle5.png")',
+              width: "609px",
+              height: "598px",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+
+          <div className="partition small-text text-gray-900 ml-10">
+            <div className="text-gray-900 small-text-title font-bold">
+              Sermorelin
+            </div>
+            <br></br>
+            Unlocking growth hormone potential, Sermorelin emerges as a
+            groundbreaking growth hormone-releasing hormone (GHRH) analog. While
+            traditionally used to assess growth hormone secretion, Sermorelin
+            has captivated researchers with its remarkable range of
+            capabilities.
+            <br></br>
+            <br></br>
+            Sermorelin has shown promise in various medical fields, including
+            bolstering bone density and reducing scarring.
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-blue-50">
+        <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+          <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+            Muscle Growth
+          </div>
+        </div>
+        <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
+          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+        </div>
+        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+          <div className="small-text text-gray-900">
+            Peptides play a pivotal role in enhancing muscle growth and overall
+            well-being. The thoughtful integration of innovative peptides, such
+            as CJC 1295, Ipamorelin, Tesamorelin, and Sermorelin, offers a
+            comprehensive approach to promoting a more robust release of Human
+            Growth Hormone (HGH). This heightened HGH release contributes to
+            enhanced muscle mass, and improved metabolism, and boosts overall
+            physical performance, making them valuable tools for a healthier
+            physique.
+          </div>
+        </div>
+        <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+          <div className="text-gray-600 items-center w-full text-center small-text-title font-bold">
+            Benefits of Muscle Growth
+          </div>
+        </div>
+
+        <div>
+          <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
+            <div className="partition small-text text-gray-900 ml-10">
+              <ul className="list-none">
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span>Promotion of lean muscle growth</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Enhanced sleep quality </span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Improved sex drive.</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Increased bone density and regeneration</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Diminished muscle discomfort</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Improved skin elasticity</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Significant elevation of IGF-1 levels</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Accelerated wound healing</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="partition small-text text-gray-900 ml-10">
+              <ul className="list-none">
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span>Elevated strength and stamina</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Quicker workout recovery </span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Reduction in body fat</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Heightened mental focus and clarity</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Reinforced immune system function</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Alleviated joint pain</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Reduced cholesterol levels</span>
+                </li>
+                <br></br>
+                <li className="flex items-center">
+                  <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span> Healthier hair and nails</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+          FAQ&apos;s
+        </div>
+      </div>
+      <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
+        <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+      </div>
+      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="border border-solid border-black rounded-lg relative">
+          <div className="m-2 flex justify-between">
+            <span>Types</span>
+            <span className=" text-blue-500 cursor-pointer">
+              +
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="border border-solid border-black rounded-lg relative">
+          <div className="m-2 flex justify-between">
+            <span>SARMs</span>
+            <span className=" text-blue-500 cursor-pointer">
+              +
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="border border-solid border-black rounded-lg relative">
+          <div className="m-2 flex justify-between">
+            <span>Peptides</span>
+            <span className=" text-blue-500 cursor-pointer">
+              +
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="border border-solid border-black rounded-lg relative">
+          <div className="m-2 flex justify-between">
+            <span>Peptide Therapy</span>
+            <span className=" text-blue-500 cursor-pointer">
+              +
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="pb-28">
+
+        <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+          <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+            Enroll now
+          </div>
+        </div>
+        <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
+          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+        </div>
+      </div>
+      <div className="relative bg-gray-300 p-7 h-96">
+        <div className="absolute bottom-60 left-1/2 transform -translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5">
+          <div className="text-center mb-5">Enroll now to discover a comprehensive
+            list of peptides for muscle mass. Empower your journey toward optimal health. Join us today!</div>
+          <div className="flex flex-col md:flex-row md:items-center justify-center">
+            <input
+              type="text"
+              placeholder="First name*"
+              className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4"
+            />
+            <input
+              type="text"
+              placeholder="Last name*"
+              className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4"
+            />
+            <input
+              type="email"
+              placeholder="Email*"
+              className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4"
+            />
+          </div>
+          <div className="flex justify-center">
+            <button className="bg-blue-500 text-white rounded-lg py-2 px-4">
+              Get Started
+            </button>
+          </div>
+
+          <div className="text-center mt-5">After subscribing you will receive a comprehensive list of all peptides available</div>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 p-4 w-full">
+          <div className="flex justify-between items-center">
+            <div className="w-2/6 text-left">
+              <Image src="/logo.png" alt="Logo" width={263} height={31} />
+            </div>
+            <div className="w-2/6 text-center">
+              <div className="small-text text-gray-900 mr-10">
+                <div className="text-gray-900 small-text-title font-bold">
+                  About us
+                </div>
+                <br></br>
+                We&apos;re dedicated to educating and informing, providing concise insights into the benefits of peptides.
+                Empower your well-being through knowledge with us.
+              </div>
+            </div>
+            <div className="w-2/6 text-right">          
+            <div className="small-text text-gray-900 mr-10">
+              <div className="text-gray-900 small-text-title font-bold">
+                Links
+              </div>
+              <br></br>
+              Telephone
+              <br></br>
+              Email
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}

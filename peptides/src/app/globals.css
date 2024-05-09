@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255; /* Set to white */
+  --background-end-rgb: 255, 255, 255; /* Set to white */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: white; 
+  color: black; 
+}
+
+.center{
+  background-image: 'url("/layer1.png")';
+   width: 100%;
+   /*  height: 620px; */
+    background-size: 'contain';
+     background-position: 'center';
+}
+
+.center-text{
+  font-size: 80px;
+}
+
+.partition{
+  width: 50%;
+}
+
+.mid-size-text{
+  font-size: 34px;
+}
+
+.small-text{
+  font-size: 16px;
+}
+
+.small-text-title{
+  font-size: 20px;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
