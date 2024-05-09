@@ -127,28 +127,26 @@ export default function Home() {
             <br></br>
             <ul className="list-none">
               <li className="flex items-center">
-                <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
                 <span>Amino acids stand alone as individual molecules.</span>
               </li>
               <br></br>
               <li className="flex items-center">
-                <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
                 <span>
-                  {" "}
                   Peptides, on the other hand, are usually short chains, ranging
-                  from 2 to 50 amino acids.{" "}
+                  from 2 to 50 amino acids.
                 </span>
               </li>
               <br></br>
               <li className="flex items-center">
-                <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
-                <span>
-                  {" "}
-                  Proteins, the heavyweight champions, are generally long
+                <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>Proteins, the heavyweight champions, are generally long
                   chains, packing in 50 or more amino acids.
                 </span>
               </li>
             </ul>
+
             <br></br>
             <br></br>
             Now, here&apos;s a surprising fact: while some may see peptides as
@@ -437,14 +435,13 @@ export default function Home() {
         mainText="Peptide Therapy"
         additionalText="Additional text that will be shown when the + button is clicked."
       />
-      <div className="pb-28">
-
+      <div className="pb-40">
         <div className="container mx-auto flex flex-col items-center p-4 max-w-5xl w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             Enroll now
           </div>
           <div className="flex justify-center w-full">
-            <div className="border-solid border-b border-blue-300 border-2 w-10" id="blueLine"></div>
+            <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
           </div>
         </div>
       </div>
@@ -452,11 +449,8 @@ export default function Home() {
         <div className="absolute bottom-52 left-1/2 transform -translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5">
           <EnrollmentForm />
         </div>
-
-
-
         <div className="absolute bottom-0 left-0 right-0 p-4 w-full">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center container mx-auto p-4 max-w-5xl w-full">
             <div className="w-2/6 text-left">
               <Image src="/logo.png" alt="Logo" width={263} height={31} />
             </div>
@@ -479,7 +473,8 @@ export default function Home() {
                 Telephone
                 <br></br>
                 Email
-              </div></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
