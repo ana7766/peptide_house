@@ -3,39 +3,13 @@ import Image from "next/image";
 import dynamic from 'next/dynamic';
 import Card from "./components/card";
 import EnrollmentForm from "./components/enrollmentForm";
+import EnrollNowBanner from "./components/enrollNowBanner";
+import Header from "./components/header";
 
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col items-center justify-between p-14">
-        <nav className="max-w-5xl w-full mx-auto flex justify-between items-center">
-          <div>
-            <Image src="/logo.png" alt="Logo" width={309} height={37} />
-          </div>
-          <ul className="flex space-x-6">
-            <li>
-              <a href="#" className="text-gray-800">
-                What Are Peptides
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-800">
-                Peptides for Muscle Grow
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-800">
-                Muscle Grow
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-800">
-                FAQ&apos;s
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Header />
       <div>
         <div
           className="center"
@@ -71,20 +45,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
-          <div className="container mx-auto mid-size-text font-bold text-gray-300 flex items-center">
-            Enroll now to discover a comprehensive list of peptides
-          </div>
-          <div
-            style={{
-              backgroundImage: 'url("/arrow_blue.png")',
-              width: "51.5px",
-              height: "15px",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-        </div>
+        <EnrollNowBanner />
       </div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
         <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
@@ -146,7 +107,6 @@ export default function Home() {
                 </span>
               </li>
             </ul>
-
             <br></br>
             <br></br>
             Now, here&apos;s a surprising fact: while some may see peptides as
@@ -314,7 +274,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-          <div className="text-gray-600 items-center w-full text-center small-text-title font-bold">
+          <div className="text-gray-600 items-center w-full text-center text-2xl font-bold">
             Benefits of Muscle Growth
           </div>
         </div>
@@ -364,7 +324,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-
             <div className="partition small-text text-gray-900 ml-10">
               <ul className="list-none">
                 <li className="flex items-center">
@@ -436,13 +395,13 @@ export default function Home() {
         additionalText="Additional text that will be shown when the + button is clicked."
       />
       <div className="pb-40">
-        <div className="container mx-auto flex flex-col items-center p-4 max-w-5xl w-full">
-          <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+        <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+          <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold" id="enrollPartition">
             Enroll now
           </div>
-          <div className="flex justify-center w-full">
-            <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-          </div>
+        </div>
+        <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
+          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
         </div>
       </div>
       <div className="relative bg-gray-300 p-7 h-96">
