@@ -10,7 +10,7 @@ function scrollToElement(id: string) {
 
 const EnrollNowBanner = () => {
   return (
-    <div>
+    <div className='h-24'>
       <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
         <div className="container mx-auto mid-size-text font-bold text-gray-300 flex items-center">
           Enroll now to discover a comprehensive list of peptides

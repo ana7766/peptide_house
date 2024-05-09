@@ -253,6 +253,7 @@ export default function Home() {
       </div>
 
       <div className="bg-blue-50">
+        <div className="h-16"></div>
         <div className="container mx-auto items-center p-4 max-w-5xl w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             Muscle Growth
@@ -274,6 +275,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+          <div className="h-16"></div>
           <div className="text-gray-600 items-center w-full text-center text-2xl font-bold">
             Benefits of Muscle Growth
           </div>
@@ -372,29 +374,33 @@ export default function Home() {
         <div className="h-16"></div>
       </div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
-          FAQ&apos;s
-        </div>
+        <div className="h-16"></div>
+        <div className="h-96">
+
+          <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+            FAQ&apos;s
+          </div>
+
+          <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
+            <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+          </div>
+          <Card
+            mainText="Types"
+            additionalText="Additional text that will be shown when the + button is clicked."
+          />
+          <Card
+            mainText="SARMs"
+            additionalText="Additional text that will be shown when the + button is clicked."
+          />
+          <Card
+            mainText="Peptides"
+            additionalText="Additional text that will be shown when the + button is clicked."
+          />
+          <Card
+            mainText="Peptide Therapy"
+            additionalText="Additional text that will be shown when the + button is clicked."
+          /></div>
       </div>
-      <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
-        <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-      </div>
-      <Card
-        mainText="Types"
-        additionalText="Additional text that will be shown when the + button is clicked."
-      />
-      <Card
-        mainText="SARMs"
-        additionalText="Additional text that will be shown when the + button is clicked."
-      />
-      <Card
-        mainText="Peptides"
-        additionalText="Additional text that will be shown when the + button is clicked."
-      />
-      <Card
-        mainText="Peptide Therapy"
-        additionalText="Additional text that will be shown when the + button is clicked."
-      />
       <div className="pb-40">
         <div className="container mx-auto items-center p-4 max-w-5xl w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold" id="enrollPartition">
