@@ -435,7 +435,7 @@ export default function Home() {
         </div>
         <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
           <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-5xl w-full">
-            <div className="w-full md:w-2/6 text-left">
+            <div className="w-full md:w-2/6 text-left float-start">
               <Image src="/logo.png" alt="Logo" width={263} height={31} />
             </div>
             <div className="w-full md:w-2/6 text-left md:mt-0 mt-4">
@@ -446,14 +446,14 @@ export default function Home() {
                 We&apos;re dedicated to educating and informing, providing concise insights into the benefits of peptides. Empower your well-being through knowledge with us.
               </div>
             </div>
-            <div className="w-full md:w-2/6 text-left mt-4">
-              <div className="small-text text-gray-900 md:float-end">
-                <div className="text-gray-900 small-text-title font-bold">
+            <div className="w-full md:w-2/6  md:mt-0 mt-4">
+              <div className="small-text text-gray-900">
+                <div className="h-2/4 text-left float-end">
+                  <div className="text-gray-900 small-text-title font-bold">
                   Links
                 </div>
-                Telephone
-                <div className="h-1"></div>
-                Email
+                Telephone <br/>Email
+                </div>
               </div>
             </div>
           </div>
