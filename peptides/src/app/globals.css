@@ -78,3 +78,8 @@ body {
     text-wrap: balance;
   }
 }
+@media (max-width: 768px) { 
+  .product-sections{
+  height: fit-content;  
+  }
+ }
