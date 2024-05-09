@@ -425,7 +425,7 @@ export default function Home() {
         <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
       </div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-black rounded-lg relative">
+        <div className="border border-solid border-gray-300 rounded-lg relative">
           <div className="m-2 flex justify-between">
             <span>Types</span>
             <span className=" text-blue-500 cursor-pointer">
@@ -435,7 +435,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-black rounded-lg relative">
+        <div className="border border-solid border-gray-300 rounded-lg relative">
           <div className="m-2 flex justify-between">
             <span>SARMs</span>
             <span className=" text-blue-500 cursor-pointer">
@@ -445,7 +445,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-black rounded-lg relative">
+        <div className="border border-solid border-gray-300 rounded-lg relative">
           <div className="m-2 flex justify-between">
             <span>Peptides</span>
             <span className=" text-blue-500 cursor-pointer">
@@ -455,7 +455,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-black rounded-lg relative">
+        <div className="border border-solid border-gray-300 rounded-lg relative">
           <div className="m-2 flex justify-between">
             <span>Peptide Therapy</span>
             <span className=" text-blue-500 cursor-pointer">
