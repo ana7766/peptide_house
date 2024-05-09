@@ -24,6 +24,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.product-sections{
+  height: 605px;
+}
+
 .center {
   width: 100%;
 

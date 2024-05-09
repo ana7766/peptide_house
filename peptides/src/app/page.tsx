@@ -70,7 +70,7 @@ export default function Home() {
           perform important tasks
         </div>
       </div>
-      <div>
+      <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div
             style={{
@@ -117,8 +117,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div>
+<div className="h-24"></div>
+      <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div className="partition small-text text-gray-900 mr-10">
             <div className="text-gray-900 small-text-title font-bold">
@@ -154,8 +154,8 @@ export default function Home() {
           ></div>
         </div>
       </div>
-
-      <div>
+<div className="h-24"></div>
+      <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div
             style={{
@@ -187,8 +187,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div>
+<div className="h-24"></div>
+      <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div className="partition small-text text-gray-900 mr-10">
             <div className="text-gray-900 small-text-title font-bold">
@@ -221,8 +221,8 @@ export default function Home() {
           ></div>
         </div>
       </div>
-
-      <div>
+<div className="h-24"></div>
+      <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div
             style={{
@@ -250,8 +250,9 @@ export default function Home() {
             bolstering bone density and reducing scarring.
           </div>
         </div>
-      </div>
 
+      </div>
+      <div className="h-24"></div>
       <div className="bg-blue-50">
         <div className="h-16"></div>
         <div className="container mx-auto items-center p-4 max-w-5xl w-full">
