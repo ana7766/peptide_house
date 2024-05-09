@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
-/* import Card from "./components/card"; */
-
+import Card from "./components/card";
+import EnrollmentForm from "./components/enrollmentForm";
 
 
 
@@ -424,87 +424,40 @@ export default function Home() {
       <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
         <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
       </div>
-      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-gray-300 rounded-lg relative">
-          <div className="m-2 flex justify-between">
-            <span>Types</span>
-            <span className=" text-blue-500 cursor-pointer">
-              +
-            </span>
-          </div>
-        </div>
-      </div>
-      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-gray-300 rounded-lg relative">
-          <div className="m-2 flex justify-between">
-            <span>SARMs</span>
-            <span className=" text-blue-500 cursor-pointer">
-              +
-            </span>
-          </div>
-        </div>
-      </div>
-      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-gray-300 rounded-lg relative">
-          <div className="m-2 flex justify-between">
-            <span>Peptides</span>
-            <span className=" text-blue-500 cursor-pointer">
-              +
-            </span>
-          </div>
-        </div>
-      </div>
-      <div className="container mx-auto items-center p-4 max-w-5xl w-full">
-        <div className="border border-solid border-gray-300 rounded-lg relative">
-          <div className="m-2 flex justify-between">
-            <span>Peptide Therapy</span>
-            <span className=" text-blue-500 cursor-pointer">
-              +
-            </span>
-          </div>
-        </div>
-      </div>
-
+      <Card
+        mainText="Types"
+        additionalText="Additional text that will be shown when the + button is clicked."
+      />
+      <Card
+        mainText="SARMs"
+        additionalText="Additional text that will be shown when the + button is clicked."
+      />
+      <Card
+        mainText="Peptides"
+        additionalText="Additional text that will be shown when the + button is clicked."
+      />
+      <Card
+        mainText="Peptide Therapy"
+        additionalText="Additional text that will be shown when the + button is clicked."
+      />
       <div className="pb-28">
 
-        <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+        <div className="container mx-auto flex flex-col items-center p-4 max-w-5xl w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             Enroll now
           </div>
-        </div>
-        <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
-          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
+          <div className="flex justify-center w-full">
+            <div className="border-solid border-b border-blue-300 border-2 w-10" id="blueLine"></div>
+          </div>
         </div>
       </div>
       <div className="relative bg-gray-300 p-7 h-96">
-        <div className="absolute bottom-60 left-1/2 transform -translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5">
-          <div className="text-center mb-5">Enroll now to discover a comprehensive
-            list of peptides for muscle mass. Empower your journey toward optimal health. Join us today!</div>
-          <div className="flex flex-col md:flex-row md:items-center justify-center">
-            <input
-              type="text"
-              placeholder="First name*"
-              className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4"
-            />
-            <input
-              type="text"
-              placeholder="Last name*"
-              className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4"
-            />
-            <input
-              type="email"
-              placeholder="Email*"
-              className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4"
-            />
-          </div>
-          <div className="flex justify-center">
-            <button className="bg-blue-500 text-white rounded-lg py-2 px-4">
-              Get Started
-            </button>
-          </div>
-
-          <div className="text-center mt-5">After subscribing you will receive a comprehensive list of all peptides available</div>
+        <div className="absolute bottom-52 left-1/2 transform -translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5">
+          <EnrollmentForm />
         </div>
+
+
+
         <div className="absolute bottom-0 left-0 right-0 p-4 w-full">
           <div className="flex justify-between items-center">
             <div className="w-2/6 text-left">
@@ -520,16 +473,16 @@ export default function Home() {
                 Empower your well-being through knowledge with us.
               </div>
             </div>
-            <div className="w-2/6 text-left">          
-            <div className="small-text text-gray-900 mr-10 float-end">
-              <div className="text-gray-900 small-text-title font-bold">
-                Links
-              </div>
-              <br></br>
-              Telephone
-              <br></br>
-              Email
-            </div></div>
+            <div className="w-2/6 text-left">
+              <div className="small-text text-gray-900 mr-10 float-end">
+                <div className="text-gray-900 small-text-title font-bold">
+                  Links
+                </div>
+                <br></br>
+                Telephone
+                <br></br>
+                Email
+              </div></div>
           </div>
         </div>
       </div>
