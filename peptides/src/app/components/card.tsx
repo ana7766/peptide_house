@@ -1,5 +1,5 @@
-// Card.tsx
-import React from "react";
+"use client";
+import React, { useState } from 'react';
 
 interface CardProps {
   mainText: string;
@@ -7,25 +7,33 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ mainText, additionalText }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [showAdditionalText, setShowAdditionalText] = useState(false);
 
-  const toggleCard = () => {
-    setIsOpen(!isOpen);
+  const toggleAdditionalText = () => {
+    setShowAdditionalText(!showAdditionalText);
   };
 
   return (
-    <div className="card">
-      <div className="card-header">
-        <h2>{mainText}</h2>
-        <button onClick={toggleCard}>{isOpen ? "-" : "+"}</button>
-      </div>
-      {isOpen && (
-        <div className="card-body">
-          <p>{additionalText}</p>
+    <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+      <div className="border border-solid border-gray-300 rounded-lg relative">
+        <div className="m-2 flex justify-between">
+          <span>{mainText}</span>
+          <span
+            className="text-blue-500 cursor-pointer"
+            onClick={toggleAdditionalText}
+          >
+            {showAdditionalText ? '-' : '+'}
+          </span>
         </div>
-      )}
+        {showAdditionalText && (
+          <div className="m-2">
+            <span>{additionalText}</span>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
 
 export default Card;
+
