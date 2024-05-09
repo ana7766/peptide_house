@@ -117,7 +117,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-<div className="h-24"></div>
+      <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div className="partition small-text text-gray-900 mr-10">
@@ -154,7 +154,7 @@ export default function Home() {
           ></div>
         </div>
       </div>
-<div className="h-24"></div>
+      <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-<div className="h-24"></div>
+      <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div className="partition small-text text-gray-900 mr-10">
@@ -221,7 +221,7 @@ export default function Home() {
           ></div>
         </div>
       </div>
-<div className="h-24"></div>
+      <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
           <div
@@ -283,8 +283,8 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
-            <div className="partition small-text text-gray-900 ml-10">
+          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center p-4 max-w-5xl w-full">
+            <div className="partition small-text text-gray-900 ml-10 lg:w-1/2">
               <ul className="list-none">
                 <li className="flex items-center">
                   <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
@@ -327,7 +327,8 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="partition small-text text-gray-900 ml-10">
+
+            <div className="partition small-text text-gray-900 ml-10 lg:w-1/2 space-y-4 lg:space-y-0 lg:space-x-4">
               <ul className="list-none">
                 <li className="flex items-center">
                   <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
@@ -413,33 +414,33 @@ export default function Home() {
         </div>
       </div>
       <div className="relative bg-neutral-100 p-7">
-        <div className="h-96"></div>
-        <div className="absolute bottom-72 left-1/2 transform -translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5">
+        <div className="md:h-96"></div>
+        <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-72">
           <EnrollmentForm />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 p-4 w-full">
-          <div className="flex justify-between items-center container mx-auto p-4 max-w-5xl w-full">
-            <div className="w-2/6 text-left">
+        <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
+          <div className="flex flex-wrap justify-between items-center container mx-auto p-4 max-w-5xl w-full">
+            <div className="w-full md:w-2/6 text-left">
               <Image src="/logo.png" alt="Logo" width={263} height={31} />
             </div>
-            <div className="w-2/6 text-left">
-              <div className="small-text text-gray-900 mr-10">
+            <div className="w-full md:w-2/6 text-left md:mt-0 mt-4">
+              <div className="small-text text-gray-900 md:mr-10">
                 <div className="text-gray-900 small-text-title font-bold">
                   About us
                 </div>
-                <br></br>
+                <br />
                 We&apos;re dedicated to educating and informing, providing concise insights into the benefits of peptides.
                 Empower your well-being through knowledge with us.
               </div>
             </div>
-            <div className="w-2/6 text-left">
-              <div className="small-text text-gray-900 mr-10 float-end">
+            <div className="w-full md:w-2/6 text-left mt-4">
+              <div className="small-text text-gray-900 md:mr-10 md:float-end">
                 <div className="text-gray-900 small-text-title font-bold">
                   Links
                 </div>
-                <br></br>
+                <br />
                 Telephone
-                <br></br>
+                <br />
                 Email
               </div>
             </div>
