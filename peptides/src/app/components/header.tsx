@@ -10,9 +10,9 @@ function Header() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between p-14">
+    <div className="flex flex-col items-center justify-between p-10">
       <nav className="max-w-5xl w-full mx-auto flex justify-between items-center hidden md:flex">
-        <div>
+        <div className='mr-8'>
           <Image src="/logo.png" alt="Logo" width={309} height={37} />
         </div>
         <ul className="flex space-x-6">
