@@ -4,9 +4,6 @@ import dynamic from 'next/dynamic';
 import Card from "./components/card";
 import EnrollmentForm from "./components/enrollmentForm";
 
-
-
-
 export default function Home() {
   return (
     <main>
