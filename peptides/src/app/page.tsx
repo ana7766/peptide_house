@@ -25,16 +25,15 @@ export default function Home() {
                 <span className="text-blue-300 font-bold">Muscle Growth</span>
               </div>
             </div>
-            <div
-              style={{
-                backgroundImage: 'url("/muscle1.2.png")',
-                maxWidth: "389px",
-                width: "100%",
-                height: "384px",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
+            <div className="relative h-full w-full select-none sm:max-h-[207px] sm:max-w-[262px] md:max-h-[260px] md:max-w-[328px] lg:max-h-[311px] lg:max-w-[302px] xl:max-h-[311px] xl:max-w-[389px]">
+              <Image
+                alt="Muscle"
+                src="/muscle1.2.png"
+                layout="responsive"
+                width={389}
+                height={384}
+              />
+            </div>
           </div>
           <div className="container mx-auto flex justify-between items-center p-4 max-w-5xl w-full">
             <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
@@ -74,16 +73,14 @@ export default function Home() {
       </div>
       <div className="product-sections">
         <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-5xl w-full">
-          <div
-            style={{
-              backgroundImage: 'url("/bottle1.png")',
-              maxWidth: "609px",
-              width: "100%",
-              height: "598px",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
+          <Image
+            alt="Muscle"
+            src="/bottle1.png"
+            layout="responsive"
+            width={609}
+            height={598}
+          />
+
           <div className="partition small-text text-gray-900 ml-10">
             Understanding peptides is like unveiling the building blocks of
             life:
@@ -155,31 +152,25 @@ export default function Home() {
             investigate it as a treatment for lipodystrophy and growth hormone
             deficiency.
           </div>
-          <div
-            style={{
-              backgroundImage: 'url("/bottle2.png")',
-              maxWidth: "609px",
-              width: "100%",
-              height: "598px",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
+          <Image
+            alt="Muscle"
+            src="/bottle2.png"
+            layout="responsive"
+            width={609}
+            height={598}
+          />
         </div>
       </div>
       <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-5xl w-full">
-          <div
-            style={{
-              backgroundImage: 'url("/bottle3.png")',
-              maxWidth: "609px",
-              width: "100%",
-              height: "598px",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
+          <Image
+            alt="bottle3"
+            src="/bottle3.png"
+            layout="responsive"
+            width={609}
+            height={598}
+          />
 
           <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
@@ -224,31 +215,25 @@ export default function Home() {
             slow the progression of mild cognitive impairment, highlighting its
             potential in diverse areas of health and wellness.
           </div>
-          <div
-            style={{
-              backgroundImage: 'url("/bottle4.png")',
-              maxWidth: "609px",
-              width: "100%",
-              height: "598px",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
+          <Image
+            alt="bottle 4"
+            src="/bottle4.png"
+            layout="responsive"
+            width={609}
+            height={598}
+          />
         </div>
       </div>
       <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-5xl w-full">
-          <div
-            style={{
-              backgroundImage: 'url("/bottle5.png")',
-              maxWidth: "609px",
-              width: "100%",
-              height: "598px",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
+          <Image
+            alt="bottle5"
+            src="/bottle5.png"
+            layout="responsive"
+            width={609}
+            height={598}
+          />
 
           <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
@@ -439,7 +424,7 @@ export default function Home() {
       </div>
       <div className="relative bg-neutral-100 p-7 h-fit">
         <div className="md:h-96"></div>
-        <div className="md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-80">
+        <div className=" shadow-md shadow-enrollBox md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-80 max-w-[998px]">
           <EnrollmentForm />
         </div>
         <div className="lg:h-24"></div>

@@ -1,97 +1,143 @@
 "use client";
 import React, { useState } from "react";
+import { z, ZodError } from "zod";
 
-const EnrollmentForm: React.FC = () => {
+// Define Zod schema for form data validation
+const EnrollmentFormSchema = z.object({
+    firstName: z.string().min(2, { message: "Please enter valid first name" }),
+    lastName: z.string().min(2, { message: "Please enter valid last name" }),
+    email: z.string().email({ message: "Please enter valid email" }),
+  });
+  
+  const EnrollmentForm: React.FC = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
-    const [error, setError] = useState("");
-
+    const [error, setError] = useState<string>("");
+    const [focusedField, setFocusedField] = useState<string>("");
+  
     const handleFirstNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFirstName(e.target.value);
+      setFirstName(e.target.value);
     };
-
+  
     const handleLastNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setLastName(e.target.value);
+      setLastName(e.target.value);
     };
-
+  
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(e.target.value);
+      setEmail(e.target.value);
     };
-
-    const validateEmail = (email: string) => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
+  
+    const handleInputFocus = (fieldName: string) => {
+      setFocusedField(fieldName);
     };
-
-    const handleGetStartedClick = () => {
-        if (!firstName || !lastName || !email) {
-            setError("Please fill out all required fields.");
-            return;
-        }
-
-        if (firstName.length < 2 || lastName.length < 2) {
-            setError("First name and last name must be at least two characters long.");
-            return;
-        }
-
-        if (!validateEmail(email)) {
-            setError("Please enter a valid email address.");
-            return;
-        }
-
+  
+    const handleInputBlur = () => {
+      setFocusedField("");
+    };
+  
+    const handleGetStartedClick = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault(); // Prevent default form submission
+  
+      try {
+        const formData = EnrollmentFormSchema.parse({
+          firstName,
+          lastName,
+          email,
+        });
+  
+        // If validation succeeds, clear error state and proceed
         setError("");
-
-        console.log("First Name:", firstName);
-        console.log("Last Name:", lastName);
-        console.log("Email:", email);
-
+  
+        // Do something with validated form data
+        console.log("Form data:", formData);
+  
+        // Simulate form submission
+        console.log("Form submitted successfully!");
+      } catch (err) {
+        if (err instanceof ZodError) {
+          // If validation fails, set error message
+          setError(err.errors[0].message);
+          console.error("Validation error:", err.errors[0].message);
+        }
+      }
     };
 
-    return (
-        <div className="text-black bg-white p-5">
-            <div className="text-center mb-5 text-base">
-                Enroll now to discover a comprehensive list of peptides for muscle
-                mass. Empower your journey toward optimal health. <span className="font-bold">Join us today!</span>
-            </div>
-            <div className="flex flex-col lg:flex-row items-center justify-center">
-                <input
-                    type="text"
-                    placeholder="First name*"
-                    className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4 input-sizing"
-                    value={firstName}
-                    onChange={handleFirstNameChange}
-                />
-                <input
-                    type="text"
-                    placeholder="Last name*"
-                    className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4 input-sizing"
-                    value={lastName}
-                    onChange={handleLastNameChange}
-                />
-                <input
-                    type="email"
-                    placeholder="Email*"
-                    className="border border-gray-300 rounded-lg p-2 mb-4 md:mr-4 input-sizing"
-                    value={email}
-                    onChange={handleEmailChange}
-                />
-            </div>
-            {error && <div className="text-red-500 text-sm mb-2">{error}</div>}
-            <div className="flex justify-center">
-                <button
-                    className="bg-blue-500 text-white rounded-lg py-3 px-12"
-                    onClick={handleGetStartedClick}
-                >
-                    Get Started
-                </button>
-            </div>
-            <div className="text-center mt-5 text-base">
-                After subscribing you will receive a comprehensive list of all peptides
-                available
-            </div>
+  return (
+    <form onSubmit={handleGetStartedClick} className="text-black bg-white p-5 action=javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')" id="enrollment-form">
+      <div className="text-center mb-5 text-base">
+        Enroll now to discover a comprehensive list of peptides for muscle mass. Empower your journey toward optimal health. <span className="font-bold">Join us today!</span>
+      </div>
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-[16px] pt-[32px] sm:flex-col">
+        <div className="relative w-full">
+          <input
+            type="text"
+            required
+            placeholder="First Name"
+            className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue md:w-full"
+            name="first_name"
+            value={firstName}
+            onFocus={() => handleInputFocus("first_name")}
+            onBlur={handleInputBlur}
+            onChange={handleFirstNameChange}
+          />
+          <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
+            <span className={`text-blue-500 select-none ${focusedField === "first_name" || firstName ? "opacity-0" : ""}`}>
+              <span className="opacity-0">First Name</span>*
+            </span>
+          </div>
         </div>
-    );
+        <div className="relative w-full">
+          <input
+            type="text"
+            required
+            placeholder="Last Name"
+            className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue md:w-full"
+            name="last_name"
+            value={lastName}
+            onFocus={() => handleInputFocus("last_name")}
+            onBlur={handleInputBlur}
+            onChange={handleLastNameChange}
+          />
+          <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
+            <span className={`text-blue-500 select-none ${focusedField === "last_name" || lastName ? "opacity-0" : ""}`}>
+              <span className="opacity-0">Last Name</span>*
+            </span>
+          </div>
+        </div>
+        <div className="relative w-full">
+          <input
+            type="email"
+            required
+            placeholder="Email"
+            className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue md:w-full"
+            name="email"
+            value={email}
+            onFocus={() => handleInputFocus("email")}
+            onBlur={handleInputBlur}
+            onChange={handleEmailChange}
+          />
+          <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
+            <span className={`text-blue-500 select-none ${focusedField === "email" || email ? "opacity-0" : ""}`}>
+              <span className="opacity-0">Email</span>*
+            </span>
+          </div>
+        </div>
+      </div>
+      {error && <div className="text-red-500 text-sm mb-2">{error}</div>}
+      <div className="flex justify-center mt-5">
+        <button
+          className="bg-blue-500 text-white rounded-lg py-3 px-12"
+          type="submit"
+        >
+          Get Started
+        </button>
+      </div>
+      <div className="text-center mt-5 text-base">
+        After subscribing you will receive a comprehensive list of all peptides available
+      </div>
+    </form>
+  );
 };
 
 export default EnrollmentForm;
