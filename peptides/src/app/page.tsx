@@ -439,7 +439,7 @@ export default function Home() {
       </div>
       <div className="relative bg-neutral-100 p-7 h-fit">
         <div className="md:h-96"></div>
-        <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-80">
+        <div className="md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-80">
           <EnrollmentForm />
         </div>
         <div className="lg:h-24"></div>
