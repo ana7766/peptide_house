@@ -428,27 +428,28 @@ export default function Home() {
           <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
         </div>
       </div>
-      <div className="relative bg-neutral-100 p-7">
+      <div className="relative bg-neutral-100 p-7 h-fit">
         <div className="md:h-96"></div>
-        <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-60">
+        <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-80">
           <EnrollmentForm />
         </div>
+        <div className="h-24"></div>
         <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
           <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-5xl w-full">
-            <div className="w-full md:w-2/6 text-left float-start">
+            <div className="w-full md:w-1/4 text-left float-start">
               <Image src="/logo.png" alt="Logo" width={263} height={31} />
             </div>
-            <div className="w-full md:w-2/6 text-left md:mt-0 mt-4">
-              <div className="small-text text-gray-900">
+            <div className="w-full md:w-1/2 text-left md:mt-0 mt-4">
+              <div className="small-text text-gray-900 ml-12">
                 <div className="text-gray-900 small-text-title font-bold">
                   About us
                 </div>
                 We&apos;re dedicated to educating and informing, providing concise insights into the benefits of peptides. Empower your well-being through knowledge with us.
               </div>
             </div>
-            <div className="w-full md:w-2/6  md:mt-0 mt-4">
+            <div className="w-full md:w-1/5 md:mt-0 mt-4">
               <div className="small-text text-gray-900">
-                <div className="h-2/4 text-left float-end">
+                <div className="h-2/4 text-left md:float-end">
                   <div className="text-gray-900 small-text-title font-bold">
                   Links
                 </div>

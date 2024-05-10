@@ -28,6 +28,10 @@ body {
   height: 605px;
 }
 
+.enrollFormMove{
+  top: -25%;
+}
+
 .center {
   width: 100%;
 
