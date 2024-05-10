@@ -5,6 +5,7 @@ import Card from "./components/card";
 import EnrollmentForm from "./components/enrollmentForm";
 import EnrollNowBanner from "./components/enrollNowBanner";
 import Header from "./components/header";
+import { CardProvider } from "./components/cardController";
 
 export default function Home() {
   return (
@@ -400,22 +401,31 @@ export default function Home() {
           <div className="container mx-auto p-4 max-w-5xl w-full flex justify-center">
             <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
           </div>
-          <Card
-            mainText="Types"
-            additionalText="Additional text that will be shown when the + button is clicked."
-          />
-          <Card
-            mainText="SARMs"
-            additionalText="Additional text that will be shown when the + button is clicked."
-          />
-          <Card
-            mainText="Peptides"
-            additionalText="Additional text that will be shown when the + button is clicked."
-          />
-          <Card
-            mainText="Peptide Therapy"
-            additionalText="Additional text that will be shown when the + button is clicked."
-          /></div>
+          <CardProvider>
+            <div>
+              <Card
+                mainText="Types"
+                additionalText="Additional text that will be shown when the + button is clicked."
+                index={0}
+              />
+              <Card
+                mainText="SARMs"
+                additionalText="Additional text that will be shown when the + button is clicked."
+                index={1}
+              />
+              <Card
+                mainText="Peptides"
+                additionalText="Additional text that will be shown when the + button is clicked."
+                index={2}
+              />
+              <Card
+                mainText="Peptide Therapy"
+                additionalText="Additional text that will be shown when the + button is clicked."
+                index={3}
+              />
+            </div>
+          </CardProvider>
+        </div>
       </div>
       <div className="md:pb-32 md:mb-14">
         <div className="container mx-auto items-center p-4 max-w-5xl w-full">
@@ -450,9 +460,9 @@ export default function Home() {
               <div className="small-text text-gray-900">
                 <div className="h-2/4 text-left md:float-end">
                   <div className="text-gray-900 small-text-title font-bold">
-                  Links
-                </div>
-                Telephone <br/>Email
+                    Links
+                  </div>
+                  Telephone <br />Email
                 </div>
               </div>
             </div>

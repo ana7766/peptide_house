@@ -1,16 +1,20 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
+import { useCardContext } from './cardController';
 
 interface CardProps {
   mainText: string;
   additionalText: string;
+  index: number;
 }
 
-const Card: React.FC<CardProps> = ({ mainText, additionalText }) => {
-  const [showAdditionalText, setShowAdditionalText] = useState(false);
+const Card: React.FC<CardProps> = ({ mainText, additionalText, index }) => {
+  const { openCardIndex, setOpenCardIndex } = useCardContext();
 
-  const toggleAdditionalText = () => {
-    setShowAdditionalText(!showAdditionalText);
+  const isOpen = index === openCardIndex;
+
+  const toggleCard = () => {
+    setOpenCardIndex(isOpen ? -1 : index);
   };
 
   return (
@@ -20,12 +24,12 @@ const Card: React.FC<CardProps> = ({ mainText, additionalText }) => {
           <span className='font-bold'>{mainText}</span>
           <span
             className="text-blue-500 cursor-pointer"
-            onClick={toggleAdditionalText}
+            onClick={toggleCard}
           >
-            {showAdditionalText ? '-' : '+'}
+            {isOpen ? '-' : '+'}
           </span>
         </div>
-        {showAdditionalText && (
+        {isOpen && (
           <div className="m-2">
             <span>{additionalText}</span>
           </div>
@@ -36,4 +40,3 @@ const Card: React.FC<CardProps> = ({ mainText, additionalText }) => {
 };
 
 export default Card;
-
