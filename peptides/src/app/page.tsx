@@ -440,7 +440,7 @@ export default function Home() {
               <Image src="/logo.png" alt="Logo" width={263} height={31} />
             </div>
             <div className="w-full md:w-1/2 text-left md:mt-0 mt-4">
-              <div className="small-text text-gray-900 ml-12">
+              <div className="small-text text-gray-900 md:ml-12">
                 <div className="text-gray-900 small-text-title font-bold">
                   About us
                 </div>
