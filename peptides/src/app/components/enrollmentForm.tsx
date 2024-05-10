@@ -20,13 +20,11 @@ const EnrollmentForm: React.FC = () => {
     };
 
     const validateEmail = (email: string) => {
-        // Regular expression for validating email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     };
 
     const handleGetStartedClick = () => {
-        // Simple validation
         if (!firstName || !lastName || !email) {
             setError("Please fill out all required fields.");
             return;
