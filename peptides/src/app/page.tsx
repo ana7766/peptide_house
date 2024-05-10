@@ -342,10 +342,9 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-
-            <div className="partition small-text text-gray-900 ml-10 lg:w-1/2 space-y-4 lg:space-y-0 lg:space-x-4">
+            <div className="partition small-text text-gray-900 ml-10 lg:w-1/2 space-y-4 lg:space-y-0 lg:space-x-4 lg:mt-a">
               <ul className="list-none">
-                <li className="flex items-center">
+                <li className="flex items-center ">
                   <span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
                   <span>Elevated strength and stamina</span>
                 </li>
@@ -418,7 +417,7 @@ export default function Home() {
             additionalText="Additional text that will be shown when the + button is clicked."
           /></div>
       </div>
-      <div className="md:pb-32">
+      <div className="md:pb-32 md:mb-14">
         <div className="container mx-auto items-center p-4 max-w-5xl w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold" id="enrollPartition">
             Enroll now
@@ -430,10 +429,10 @@ export default function Home() {
       </div>
       <div className="relative bg-neutral-100 p-7 h-fit">
         <div className="md:h-96"></div>
-        <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-80">
+        <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 border border-solid border-gray-300 rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-80">
           <EnrollmentForm />
         </div>
-        <div className="h-24"></div>
+        <div className="lg:h-24"></div>
         <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
           <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-5xl w-full">
             <div className="w-full md:w-1/4 text-left float-start">

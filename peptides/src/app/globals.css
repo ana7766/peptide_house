@@ -28,9 +28,7 @@ body {
   height: 605px;
 }
 
-.enrollFormMove{
-  top: -25%;
-}
+
 
 .center {
   width: 100%;
@@ -90,4 +88,9 @@ body {
   .partition{
     width: 95%;
   }
+
+  .lg\:mt-a {
+    margin-top: 1.25rem; 
+  }
  }
+
