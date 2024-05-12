@@ -21,11 +21,26 @@
 body {
   background-color: white;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: __Montserrat_b1da2a, __Montserrat_Fallback_b1da2a;
+    font-style: normal;
+}
+
+.py-\[64px\] {
+  padding-top: 64px;
 }
 
 .product-sections{
   height: 605px;
+  margin-top: 48px;
+}
+
+.last-product{
+  margin-bottom: 48px;
+}
+
+.border-light-blue2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(232 244 255 / var(--tw-border-opacity));
 }
 
 .shadow-enrollBox, .shadow-md {

@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 
 function scrollToElement(id: string) {
   const element = document.getElementById(id);
@@ -10,25 +11,23 @@ function scrollToElement(id: string) {
 
 const EnrollNowBanner = () => {
   return (
-    <div className='h-24'>
-      <div className="container mx-auto flex justify-between items-center p-4 max-w-[1003px] w-full">
+    <div className='border-b-[3px] border-solid border-gray-100'>
+      <div className="container mx-auto flex justify-between items-center p-4 max-w-[1003.5px] max-h-[95px] w-full h-full">
         <div className="container mx-auto mid-size-text font-bold text-gray-300 flex items-center">
           Enroll now to discover a comprehensive list of peptides
         </div>
-        <div
-          style={{
-            backgroundImage: 'url("/arrow_blue.png")',
-            width: '51.5px',
-            height: '15px',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            cursor: 'pointer', // Add cursor pointer to indicate it's clickable
-          }}
+        <Image
+          src="/arrow_blue.png"
+          alt="Arrow"
+          width={51.5}
+          height={15} 
+          className="cursor-pointer"
           onClick={() => scrollToElement('enrollPartition')}
-        ></div>
+        />
       </div>
     </div>
   );
 };
 
 export default EnrollNowBanner;
+

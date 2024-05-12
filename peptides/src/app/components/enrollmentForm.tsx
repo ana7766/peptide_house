@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { z, ZodError } from "zod";
 
-// Define Zod schema for form data validation
 const EnrollmentFormSchema = z.object({
     firstName: z.string().min(2, { message: "Please enter valid first name" }),
     lastName: z.string().min(2, { message: "Please enter valid last name" }),
@@ -37,7 +36,7 @@ const EnrollmentFormSchema = z.object({
     };
   
     const handleGetStartedClick = (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault(); // Prevent default form submission
+      e.preventDefault(); 
   
       try {
         const formData = EnrollmentFormSchema.parse({
@@ -46,17 +45,15 @@ const EnrollmentFormSchema = z.object({
           email,
         });
   
-        // If validation succeeds, clear error state and proceed
         setError("");
-  
-        // Do something with validated form data
+ 
         console.log("Form data:", formData);
   
-        // Simulate form submission
+
         console.log("Form submitted successfully!");
       } catch (err) {
         if (err instanceof ZodError) {
-          // If validation fails, set error message
+
           setError(err.errors[0].message);
           console.error("Validation error:", err.errors[0].message);
         }

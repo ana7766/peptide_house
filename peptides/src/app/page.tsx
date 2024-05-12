@@ -17,14 +17,14 @@ export default function Home() {
           style={{ backgroundImage: 'url("/layer1.png")' }}>
           <div className="container mx-auto flex justify-between items-center p-2 max-w-[1200px] w-full">
             <div className="center-text">
-              The best Peptides for 
-                <span className="text-blue-400 font-bold"> Muscle Growth</span>
-                <div className="my-[16px] underline"></div>
-          <div className="container mx-auto flex justify-between p-2 max-w-[1200px] w-full">
-            <div className="text-gray-900 text-xl">
-              Find out what are best peptides for muscle grow.
-            </div>
-          </div>
+              The best Peptides for
+              <span className="text-blue-400 font-bold"> Muscle Growth</span>
+              <div className="my-[16px] underline"></div>
+              <div className="container mx-auto flex justify-between p-2 max-w-[1200px] w-full">
+                <div className="text-gray-900 text-xl">
+                  Find out what are best peptides for muscle grow.
+                </div>
+              </div>
             </div>
             <div className="relative h-full w-full select-none sm:max-h-[207px] sm:max-w-[262px] md:max-h-[260px] md:max-w-[328px] lg:max-h-[311px] lg:max-w-[302px] xl:max-h-[311px] xl:max-w-[389px]">
               <Image
@@ -36,21 +36,19 @@ export default function Home() {
               />
             </div>
           </div>
-  
+
         </div>
       </div>
       <div>
         <EnrollNowBanner />
       </div>
-      <div className="container mx-auto items-center p-4 max-w-[1200px] w-full">
+      <div className="container mx-auto items-center pt-16 max-w-[1200px] w-full">
         <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
           What are Peptides?
         </div>
       </div>
-      <div className="container mx-auto p-4 max-w-[1200px] w-full flex justify-center">
-        <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-      </div>
-      <div className="container mx-auto items-center p-4 max-w-[1200px] w-full">
+      <div className="my-[16px] underline m-auto"></div>
+      <div className="container mx-auto items-center max-w-[1200px] w-full">
         <div className="small-text text-gray-900">
           Peptides are small biological molecules that act as messengers in the
           body, facilitating communication between different parts. Typically
@@ -66,7 +64,7 @@ export default function Home() {
         </div>
       </div>
       <div className="product-sections">
-      <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
           <Image
             alt="Muscle"
             src="/bottle1.png"
@@ -111,17 +109,14 @@ export default function Home() {
         </div>
       </div>
       <div className="h-24"></div>
-      <div className="container mx-auto items-center p-4 max-w-[1200px] w-full">
+      <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
         <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
           Peptides for Muscle Growth
         </div>
-
-        <div className="container mx-auto p-4 max-w-[1200px] w-full flex justify-center">
-          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-        </div>
+        <div className="my-[16px] underline m-auto"></div>
       </div>
       <div className="product-sections">
-        <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
           <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
               CJC 1295
@@ -155,7 +150,7 @@ export default function Home() {
       </div>
       <div className="h-24"></div>
       <div className="product-sections">
-        <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+        <div className="container mx-auto md:flex gap-[48px] md:justify-between items-center p-4 max-w-[1200px] w-full">
           <Image
             alt="bottle3"
             src="/bottle3.png"
@@ -184,8 +179,8 @@ export default function Home() {
         </div>
       </div>
       <div className="h-24"></div>
-      <div className="product-sections">
-        <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+      <div className="product-sections last-product">
+        <div className="container mx-auto md:flex md:justify-between gap-[48px] items-center p-4 max-w-[1200px] w-full">
           <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
               Tesamorelin
@@ -215,8 +210,8 @@ export default function Home() {
         </div>
       </div>
       <div className="h-24"></div>
-      <div className="product-sections">
-        <div className="container mx-auto md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+      <div className="product-sections last-product">
+        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
           <Image
             alt="bottle5"
             src="/bottle5.png"
@@ -245,14 +240,12 @@ export default function Home() {
       <div className="h-24"></div>
       <div className="bg-blue-50">
         <div className="h-16"></div>
-        <div className="container mx-auto items-center p-4 max-w-[1200px] w-full">
+        <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             Muscle Growth
           </div>
         </div>
-        <div className="container mx-auto p-4 max-w-[1200px] w-full flex justify-center">
-          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-        </div>
+        <div className="my-[16px] underline m-auto"></div>
         <div className="container mx-auto flex justify-between items-center p-4 max-w-[1200px] w-full">
           <div className="small-text text-gray-900">
             Peptides play a pivotal role in enhancing muscle growth and overall
@@ -364,17 +357,14 @@ export default function Home() {
         </div>
         <div className="h-16"></div>
       </div>
-      <div className="container mx-auto items-center p-4 max-w-[1200px] w-full">
+      <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
         <div className="h-16"></div>
         <div className="h-96">
 
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             FAQ&apos;s
           </div>
-
-          <div className="container mx-auto p-4 max-w-[1200px] w-full flex justify-center">
-            <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-          </div>
+          <div className="my-[16px] underline m-auto"></div>
           <CardProvider>
             <div>
               <Card
@@ -402,17 +392,15 @@ export default function Home() {
         </div>
       </div>
       <div className="md:pb-32 md:mb-14">
-        <div className="container mx-auto items-center p-4 max-w-[1200px] w-full">
+        <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold" id="enrollPartition">
             Enroll now
           </div>
         </div>
-        <div className="container mx-auto p-4 max-w-[1200px] w-full flex justify-center">
-          <div className="border-solid border-b border-blue-300 border-2 w-10"></div>
-        </div>
+        <div className="my-[16px] underline m-auto"></div>
       </div>
-      <div className="relative bg-neutral-100 p-7 h-fit">
-        <div className="md:h-96"></div>
+      <div className="relative bg-neutral-100 p-7 md:h-[388px]">
+        <div className="md:h-60"></div>
         <div className=" shadow-md shadow-enrollBox md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-80 max-w-[998px]">
           <EnrollmentForm />
         </div>
@@ -441,7 +429,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </main>
