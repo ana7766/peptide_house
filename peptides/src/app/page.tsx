@@ -400,8 +400,8 @@ export default function Home() {
         <div className="my-[16px] underline m-auto"></div>
       </div>
       <div className="relative bg-neutral-100 p-7 md:h-[388px]">
-        <div className="md:h-60"></div>
-        <div className=" shadow-md shadow-enrollBox md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-80 max-w-[998px]">
+        {/* <div className="md:h-60"></div> */}
+        <div className="shadow-md shadow-enrollBox md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-[998px] w-full">
           <EnrollmentForm />
         </div>
         <div className="lg:h-24"></div>

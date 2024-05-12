@@ -61,79 +61,80 @@ const EnrollmentFormSchema = z.object({
     };
 
   return (
-    <form onSubmit={handleGetStartedClick} className="text-black bg-white p-5 action=javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')" id="enrollment-form">
-      <div className="text-center mb-5 text-base">
-        Enroll now to discover a comprehensive list of peptides for muscle mass. Empower your journey toward optimal health. <span className="font-bold">Join us today!</span>
+    <form onSubmit={handleGetStartedClick} className="w-full text-black bg-white p-5" id="enrollment-form">
+  <div className="text-center mb-5 text-base">
+    Enroll now to discover a comprehensive list of peptides for muscle mass. Empower your journey toward optimal health. <span className="font-bold">Join us today!</span>
+  </div>
+  <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-[16px] pt-[32px] sm:flex-col">
+    <div className="relative w-full sm:w-full md:w-1/3">
+      <input
+        type="text"
+        required
+        placeholder="First Name"
+        className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue"
+        name="first_name"
+        value={firstName}
+        onFocus={() => handleInputFocus("first_name")}
+        onBlur={handleInputBlur}
+        onChange={handleFirstNameChange}
+      />
+      <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
+        <span className={`text-blue-500 select-none ${focusedField === "first_name" || firstName ? "opacity-0" : ""}`}>
+          <span className="opacity-0">First Name</span>*
+        </span>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-[16px] pt-[32px] sm:flex-col">
-        <div className="relative w-full">
-          <input
-            type="text"
-            required
-            placeholder="First Name"
-            className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue md:w-full"
-            name="first_name"
-            value={firstName}
-            onFocus={() => handleInputFocus("first_name")}
-            onBlur={handleInputBlur}
-            onChange={handleFirstNameChange}
-          />
-          <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
-            <span className={`text-blue-500 select-none ${focusedField === "first_name" || firstName ? "opacity-0" : ""}`}>
-              <span className="opacity-0">First Name</span>*
-            </span>
-          </div>
-        </div>
-        <div className="relative w-full">
-          <input
-            type="text"
-            required
-            placeholder="Last Name"
-            className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue md:w-full"
-            name="last_name"
-            value={lastName}
-            onFocus={() => handleInputFocus("last_name")}
-            onBlur={handleInputBlur}
-            onChange={handleLastNameChange}
-          />
-          <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
-            <span className={`text-blue-500 select-none ${focusedField === "last_name" || lastName ? "opacity-0" : ""}`}>
-              <span className="opacity-0">Last Name</span>*
-            </span>
-          </div>
-        </div>
-        <div className="relative w-full">
-          <input
-            type="email"
-            required
-            placeholder="Email"
-            className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue md:w-full"
-            name="email"
-            value={email}
-            onFocus={() => handleInputFocus("email")}
-            onBlur={handleInputBlur}
-            onChange={handleEmailChange}
-          />
-          <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
-            <span className={`text-blue-500 select-none ${focusedField === "email" || email ? "opacity-0" : ""}`}>
-              <span className="opacity-0">Email</span>*
-            </span>
-          </div>
-        </div>
+    </div>
+    <div className="relative w-full sm:w-full md:w-1/3">
+      <input
+        type="text"
+        required
+        placeholder="Last Name"
+        className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue"
+        name="last_name"
+        value={lastName}
+        onFocus={() => handleInputFocus("last_name")}
+        onBlur={handleInputBlur}
+        onChange={handleLastNameChange}
+      />
+      <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
+        <span className={`text-blue-500 select-none ${focusedField === "last_name" || lastName ? "opacity-0" : ""}`}>
+          <span className="opacity-0">Last Name</span>*
+        </span>
       </div>
-      {error && <div className="text-red-500 text-sm mb-2">{error}</div>}
-      <div className="flex justify-center mt-5">
-        <button
-          className="bg-blue-500 text-white rounded-lg py-3 px-12"
-          type="submit"
-        >
-          Get Started
-        </button>
+    </div>
+    <div className="relative w-full sm:w-full md:w-1/3">
+      <input
+        type="email"
+        required
+        placeholder="Email"
+        className="font-darkgray focus:bg-lightblue select-none h-12 w-full rounded-5 border border-gray px-4 py-3 shadow-none outline-none transition-all ease-linear hover:border-gray hover:bg-lightgray focus:border-blue"
+        name="email"
+        value={email}
+        onFocus={() => handleInputFocus("email")}
+        onBlur={handleInputBlur}
+        onChange={handleEmailChange}
+      />
+      <div className="pointer-events-none absolute inset-y-0 left-5 flex items-center pr-3">
+        <span className={`text-blue-500 select-none ${focusedField === "email" || email ? "opacity-0" : ""}`}>
+          <span className="opacity-0">Email</span>*
+        </span>
       </div>
-      <div className="text-center mt-5 text-base">
-        After subscribing you will receive a comprehensive list of all peptides available
-      </div>
-    </form>
+    </div>
+  </div>
+  {error && <div className="text-red-500 text-sm mb-2">{error}</div>}
+  <div className="flex justify-center mt-5">
+    <button
+      className="bg-blue-500 text-white rounded-lg py-3 px-12"
+      type="submit"
+    >
+      Get Started
+    </button>
+  </div>
+  <div className="text-center mt-5 text-base">
+    After subscribing you will receive a comprehensive list of all peptides available
+  </div>
+</form>
+
   );
 };
 
