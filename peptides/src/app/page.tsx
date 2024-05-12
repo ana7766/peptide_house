@@ -13,30 +13,29 @@ export default function Home() {
       <Header />
       <div>
         <div
-          className="overflow-hidden center md:max-h flex items-center justify-center border-b-[10px] border-t-[5px] border-solid border-light-blue2 sm:py-[40px] md:py-[40px] lg:max-h-[435px] lg:py-[97px] xl:max-h-[435px] xl:py-[62px] "
+          className="overflow-hidden center md:max-h flex items-center justify-center border-b-[10px] border-t-[5px] border-solid border-light-blue2 sm:py-[40px] md:py-[40px] lg:max-h-[420px] lg:py-[97px] xl:max-h-[420px] xl:py-[62px]"
           style={{ backgroundImage: 'url("/layer1.png")' }}>
-          <div className="container mx-auto flex justify-between items-center p-2 max-w-[1200px] w-full">
+          <div className="container mx-auto flex justify-between items-center max-w-[1200px] w-full">
             <div className="center-text">
               The best Peptides for
               <span className="text-blue-400 font-bold"> Muscle Growth</span>
               <div className="my-[16px] underline"></div>
-              <div className="container mx-auto flex justify-between p-2 max-w-[1200px] w-full">
-                <div className="text-gray-900 text-xl">
-                  Find out what are best peptides for muscle grow.
+              <div className="container mx-auto flex justify-between max-w-[1200px] w-full">
+                <div className="text-gray-900 text-xl pl-0">
+                Find out what are best peptides for muscle grow.
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full select-none sm:max-h-[207px] sm:max-w-[262px] md:max-h-[260px] md:max-w-[328px] lg:max-h-[311px] lg:max-w-[302px] xl:max-h-[311px] xl:max-w-[389px]">
+            <div className="relative h-full items w-full select-none sm:max-h-[207px] sm:max-w-[262px] md:max-h-[260px] md:max-w-[328px] lg:max-h-[311px] lg:max-w-[302px] xl:max-h-[311px] xl:max-w-[389px]">
               <Image
                 alt="Muscle"
                 src="/muscle1.2.png"
                 width={389}
                 height={384}
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
-
         </div>
       </div>
       <div>
@@ -240,14 +239,14 @@ export default function Home() {
       <div className="h-24"></div>
       <div className="bg-blue-50">
         <div className="h-16"></div>
-        <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
+        <div className="container mx-auto items-center max-w-[1200px] w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             Muscle Growth
           </div>
         </div>
         <div className="my-[16px] underline m-auto"></div>
         <div className="container mx-auto flex justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="small-text text-gray-900">
+          <div className="small-text text-gray-900 mb-[48px]">
             Peptides play a pivotal role in enhancing muscle growth and overall
             well-being. The thoughtful integration of innovative peptides, such
             as CJC 1295, Ipamorelin, Tesamorelin, and Sermorelin, offers a
@@ -259,14 +258,12 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto items-center p-4 max-w-[1200px] w-full">
-          <div className="h-16"></div>
           <div className="text-gray-600 items-center w-full text-center text-2xl font-bold">
             Benefits of Muscle Growth
           </div>
         </div>
-
         <div>
-          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center p-4 max-w-[1200px] w-full">
+          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center max-w-[1200px] w-full">
             <div className="partition small-text text-gray-900 ml-10 lg:w-1/2">
               <ul className="list-none">
                 <li className="flex items-center">
@@ -360,7 +357,6 @@ export default function Home() {
       <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
         <div className="h-16"></div>
         <div className="h-96">
-
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             FAQ&apos;s
           </div>
