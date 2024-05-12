@@ -17,9 +17,9 @@ const Card: React.FC<CardProps> = ({ mainText, additionalText, index }) => {
   };
 
   return (
-    <div className="container mx-auto items-center p-4 max-w-5xl w-full">
+    <div className="container mx-auto items-center m-3 max-w-[1200px] w-full">
       <div className={`relative min-h-[47px]`}>
-        <div className="flex cursor-pointer items-center rounded-[5px] border-[1px] border-solid border-gray-300 px-[14px] py-[11px] transition duration-300 ease-linear selection:bg-slate-500 hover:border-blue-400 hover:bg-blue-200 sm:w-[100%] sm:px-[16px] sm:py-[13px] md:w-[100%]">
+        <div className="h-12 flex cursor-pointer items-center rounded-[5px] border-[1px] border-solid border-gray-300 px-[14px] py-[11px] transition duration-300 ease-linear selection:bg-slate-500 hover:border-blue-400 hover:bg-blue-200 sm:w-[100%] sm:px-[16px] sm:py-[13px] md:w-[100%]">
          <div className='text max-[530px] flex-1 font-bold'> {mainText}</div>
           <button className="text-blue-500 cursor-pointer items-center flex h-[12px] w-[12px]" onClick={toggleCard}>
             {isOpen ? (

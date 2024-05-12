@@ -31,7 +31,25 @@ body {
 .shadow-enrollBox, .shadow-md {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.my-\[16px\] {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
+.underline {
+  height: 2px;
+  width: 48px;
+}
+
+.dot, .underline {
+  display: block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(61 155 233 / var(--tw-bg-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
 .center {
   width: 100%;
 
