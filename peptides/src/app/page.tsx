@@ -112,31 +112,31 @@ export default function Home() {
       <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-        <div className="md:w-1/2">         
-        <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
-            <div className="text-gray-900 small-text-title font-bold">
-              CJC 1295
-            </div>
-            <br></br>
-            <p> CJC 1295 which is also known as drug affinity complex: growth
-            hormone-releasing factor (DAC:GRF), is a synthetic analogue of
-            growth hormone releasing hormone (GHRH). It also happens to be a
-            growth hormone secretagogue, meaning that it acts as a secretion
-            inducer for growth hormone. This particular peptide was developed by
-            ConjuChem Biotechnologies, a medical biotech company that is based
-            out of Quebec, Canada.</p>
-           
-            
-            <br></br>
-           <p> CJC 1295 is known to increase plasma growth hormone as well as
-            insulin like growth factor one within animals. The peptide is known
-            to have a half-life of roughly six to eight hours and through the
-            administration of multiple doses insulin like growth factor one, or
-            IGF-1 for short, was found to remain elevated for up to twenty eight
-            days. The initial research and trials into CJC 1295 were to
-            investigate it as a treatment for lipodystrophy and growth hormone
-            deficiency.</p>
-          </div></div>
+          <div className="md:w-1/2">
+            <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
+              <div className="text-gray-900 small-text-title font-bold">
+                CJC 1295
+              </div>
+              <br></br>
+              <p> CJC 1295 which is also known as drug affinity complex: growth
+                hormone-releasing factor (DAC:GRF), is a synthetic analogue of
+                growth hormone releasing hormone (GHRH). It also happens to be a
+                growth hormone secretagogue, meaning that it acts as a secretion
+                inducer for growth hormone. This particular peptide was developed by
+                ConjuChem Biotechnologies, a medical biotech company that is based
+                out of Quebec, Canada.</p>
+
+
+              <br></br>
+              <p> CJC 1295 is known to increase plasma growth hormone as well as
+                insulin like growth factor one within animals. The peptide is known
+                to have a half-life of roughly six to eight hours and through the
+                administration of multiple doses insulin like growth factor one, or
+                IGF-1 for short, was found to remain elevated for up to twenty eight
+                days. The initial research and trials into CJC 1295 were to
+                investigate it as a treatment for lipodystrophy and growth hormone
+                deficiency.</p>
+            </div></div>
           <div className="w-full md:w-auto mb-6 md:mb-0 md:max-w-[609px] md:max-h-[598px]">
             <Image
               alt="Bottle 2"
