@@ -402,7 +402,7 @@ export default function Home() {
       </div>
       <div className="relative bg-neutral-100 p-7 md:h-[388px]">
         {/* <div className="md:h-60"></div> */}
-        <div className="shadow-md shadow-enrollBox md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-[998px] w-full">
+        <div className="container mx-auto md:max-w-[998px] lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:border lg:rounded-lg lg:shadow-md lg:shadow-enrollBox lg:text-black lg:bg-white lg:p-5 lg:bottom-1/2">
           <EnrollmentForm />
         </div>
         <div className="lg:h-24"></div>
