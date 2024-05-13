@@ -117,124 +117,124 @@ export default function Home() {
         <div className="my-[16px] underline m-auto"></div>
       </div>
       <div className="product-sections">
-  <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-    <div className="image-container w-full md:w-[609px]">
-      <Image
-        alt="Muscle"
-        src="/bottle2.png"
-        width={609}
-        height={598}
-        layout="responsive"
-        className="object-cover"
-      />
-    </div>
-    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
-      <div className="text-gray-900 small-text-title font-bold">
-        CJC 1295
+        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+          <div className="image-container w-full md:w-[609px]">
+            <Image
+              alt="Muscle"
+              src="/bottle2.png"
+              width={609}
+              height={598}
+              layout="responsive"
+              className="object-cover"
+            />
+          </div>
+          <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+            <div className="text-gray-900 small-text-title font-bold">
+              CJC 1295
+            </div>
+            <br />
+            <p>
+              CJC 1295, also known as drug affinity complex: growth hormone-releasing factor (DAC:GRF), is a synthetic analogue of growth hormone-releasing hormone (GHRH). It acts as a growth hormone secretagogue, inducing the secretion of growth hormone. Developed by ConjuChem Biotechnologies, this peptide was initially investigated for lipodystrophy and growth hormone deficiency treatment.
+            </p>
+            <br />
+            <p>
+              CJC 1295 increases plasma growth hormone and insulin-like growth factor one levels in animals. It has a half-life of approximately six to eight hours, with multiple doses sustaining elevated insulin-like growth factor one levels for up to twenty-eight days.
+            </p>
+          </div>
+        </div>
       </div>
-      <br />
-      <p>
-        CJC 1295, also known as drug affinity complex: growth hormone-releasing factor (DAC:GRF), is a synthetic analogue of growth hormone-releasing hormone (GHRH). It acts as a growth hormone secretagogue, inducing the secretion of growth hormone. Developed by ConjuChem Biotechnologies, this peptide was initially investigated for lipodystrophy and growth hormone deficiency treatment.
-      </p>
-      <br />
-      <p>
-        CJC 1295 increases plasma growth hormone and insulin-like growth factor one levels in animals. It has a half-life of approximately six to eight hours, with multiple doses sustaining elevated insulin-like growth factor one levels for up to twenty-eight days.
-      </p>
-    </div>
-  </div>
-</div>
 
-<div className="h-24"></div>
+      <div className="h-24"></div>
 
-<div className="product-sections">
-  <div className="container mx-auto md:flex gap-[48px] md:justify-between items-center p-4 max-w-[1200px] w-full">
-    <div className="image-container w-full md:w-[609px]">
-      <Image
-        alt="bottle3"
-        src="/bottle3.png"
-        width={609}
-        height={598}
-        layout="responsive"
-        className="object-cover"
-      />
-    </div>
-    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
-      <div className="text-gray-900 small-text-title font-bold">
-        Ipamorelin
+      <div className="product-sections">
+        <div className="container mx-auto md:flex gap-[48px] md:justify-between items-center p-4 max-w-[1200px] w-full">
+          <div className="image-container w-full md:w-[609px]">
+            <Image
+              alt="bottle3"
+              src="/bottle3.png"
+              width={609}
+              height={598}
+              layout="responsive"
+              className="object-cover"
+            />
+          </div>
+          <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+            <div className="text-gray-900 small-text-title font-bold">
+              Ipamorelin
+            </div>
+            <br />
+            <p>
+              Ipamorelin, also known as NNC26-0161 during development, is a peptide selective agonist of the growth hormone secretagogue receptor. It binds to these receptors, stimulating the secretion of growth hormone.
+            </p>
+            <br />
+            <p>
+              Like CJC 1295, Ipamorelin increases plasma growth hormone levels and stimulates weight gain without affecting other hormones like prolactin, follicle-stimulating hormone, thyroid-stimulating hormone, or luteinizing hormone.
+            </p>
+          </div>
+        </div>
       </div>
-      <br />
-      <p>
-        Ipamorelin, also known as NNC26-0161 during development, is a peptide selective agonist of the growth hormone secretagogue receptor. It binds to these receptors, stimulating the secretion of growth hormone.
-      </p>
-      <br />
-      <p>
-        Like CJC 1295, Ipamorelin increases plasma growth hormone levels and stimulates weight gain without affecting other hormones like prolactin, follicle-stimulating hormone, thyroid-stimulating hormone, or luteinizing hormone.
-      </p>
-    </div>
-  </div>
-</div>
 
-<div className="h-24"></div>
-
-<div className="product-sections last-product">
-  <div className="container mx-auto md:flex md:justify-between gap-[48px] items-center p-4 max-w-[1200px] w-full">
-    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
-      <div className="text-gray-900 small-text-title font-bold">
-        Tesamorelin
-      </div>
-      <br />
-      <p>
-        Tesamorelin, an analog of growth hormone-releasing hormone (GHRH), has shown significant clinical efficacy in treating HIV-associated lipodystrophy. It addresses abnormal fat distribution in affected individuals.
-      </p>
-      <br />
-      <p>
-        Researchers are exploring Tesamorelin&apos;s potential to enhance peripheral nerve health and potentially slow the progression of mild cognitive impairment, showcasing its versatility in healthcare.
-      </p>
-    </div>
-    <div className="image-container w-full md:w-[609px]">
-      <Image
-        alt="bottle 4"
-        src="/bottle4.png"
-        width={609}
-        height={598}
-        layout="responsive"
-        className="object-cover"
-      />
-    </div>
-  </div>
-</div>
+      <div className="h-24"></div>
 
       <div className="product-sections last-product">
-  <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-    <div className="image-container w-full md:w-[609px]">
-      <Image
-        alt="bottle5"
-        src="/bottle5.png"
-        width={609}
-        height={598}
-        layout="responsive"
-        className="object-cover"
-      />
-    </div>
-    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
-      <div className="text-gray-900 small-text-title font-bold">
-        Sermorelin
+        <div className="container mx-auto md:flex md:justify-between gap-[48px] items-center p-4 max-w-[1200px] w-full">
+          <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+            <div className="text-gray-900 small-text-title font-bold">
+              Tesamorelin
+            </div>
+            <br />
+            <p>
+              Tesamorelin, an analog of growth hormone-releasing hormone (GHRH), has shown significant clinical efficacy in treating HIV-associated lipodystrophy. It addresses abnormal fat distribution in affected individuals.
+            </p>
+            <br />
+            <p>
+              Researchers are exploring Tesamorelin&apos;s potential to enhance peripheral nerve health and potentially slow the progression of mild cognitive impairment, showcasing its versatility in healthcare.
+            </p>
+          </div>
+          <div className="image-container w-full md:w-[609px]">
+            <Image
+              alt="bottle 4"
+              src="/bottle4.png"
+              width={609}
+              height={598}
+              layout="responsive"
+              className="object-cover"
+            />
+          </div>
+        </div>
       </div>
-      <br></br>
-      <p>
-        Unlocking growth hormone potential, Sermorelin emerges as a
-        groundbreaking growth hormone-releasing hormone (GHRH) analog. While
-        traditionally used to assess growth hormone secretion, Sermorelin has
-        captivated researchers with its remarkable range of capabilities.
-      </p>
-      <br></br>
-      <p>
-        Sermorelin has shown promise in various medical fields, including
-        bolstering bone density and reducing scarring.
-      </p>
-    </div>
-  </div>
-</div>
+
+      <div className="product-sections last-product">
+        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+          <div className="image-container w-full md:w-[609px]">
+            <Image
+              alt="bottle5"
+              src="/bottle5.png"
+              width={609}
+              height={598}
+              layout="responsive"
+              className="object-cover"
+            />
+          </div>
+          <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+            <div className="text-gray-900 small-text-title font-bold">
+              Sermorelin
+            </div>
+            <br></br>
+            <p>
+              Unlocking growth hormone potential, Sermorelin emerges as a
+              groundbreaking growth hormone-releasing hormone (GHRH) analog. While
+              traditionally used to assess growth hormone secretion, Sermorelin has
+              captivated researchers with its remarkable range of capabilities.
+            </p>
+            <br></br>
+            <p>
+              Sermorelin has shown promise in various medical fields, including
+              bolstering bone density and reducing scarring.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div className="h-24"></div>
       <div className="bg-blue-50">
