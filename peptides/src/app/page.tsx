@@ -22,7 +22,7 @@ export default function Home() {
               <div className="my-[16px] underline"></div>
               <div className="container mx-auto flex justify-between max-w-[1200px] w-full">
                 <div className="text-gray-900 text-xl pl-0">
-                Find out what are best peptides for muscle grow.
+                  Find out what are best peptides for muscle grow.
                 </div>
               </div>
             </div>
@@ -64,13 +64,14 @@ export default function Home() {
       </div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <Image
+
+          <div className="max-w-[609px] max-h-[598px] w-full h-full">          <Image
             alt="Muscle"
             src="/bottle1.png"
             width={609}
             height={598}
             layout="responsive"
-          />
+          /></div>
 
           <div className="partition small-text text-gray-900 ml-10">
             Understanding peptides is like unveiling the building blocks of
@@ -116,131 +117,125 @@ export default function Home() {
         <div className="my-[16px] underline m-auto"></div>
       </div>
       <div className="product-sections">
-        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="partition small-text text-gray-900 ml-10">
-            <div className="text-gray-900 small-text-title font-bold">
-              CJC 1295
-            </div>
-            <br></br>
-            CJC 1295 which is also known as drug affinity complex: growth
-            hormone-releasing factor (DAC:GRF), is a synthetic analogue of
-            growth hormone releasing hormone (GHRH). It also happens to be a
-            growth hormone secretagogue, meaning that it acts as a secretion
-            inducer for growth hormone. This particular peptide was developed by
-            ConjuChem Biotechnologies, a medical biotech company that is based
-            out of Quebec, Canada.
-            <br></br>
-            <br></br>
-            CJC 1295 is known to increase plasma growth hormone as well as
-            insulin like growth factor one within animals. The peptide is known
-            to have a half-life of roughly six to eight hours and through the
-            administration of multiple doses insulin like growth factor one, or
-            IGF-1 for short, was found to remain elevated for up to twenty eight
-            days. The initial research and trials into CJC 1295 were to
-            investigate it as a treatment for lipodystrophy and growth hormone
-            deficiency.
-          </div>
-          <Image
-            alt="Muscle"
-            src="/bottle2.png"
-            width={609}
-            height={598}
-            layout="responsive"
-          />
-        </div>
+  <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+    <div className="image-container w-full md:w-[609px]">
+      <Image
+        alt="Muscle"
+        src="/bottle2.png"
+        width={609}
+        height={598}
+        layout="responsive"
+        className="object-cover"
+      />
+    </div>
+    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+      <div className="text-gray-900 small-text-title font-bold">
+        CJC 1295
       </div>
-      <div className="h-24"></div>
-      <div className="product-sections">
-        <div className="container mx-auto md:flex gap-[48px] md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <Image
-            alt="bottle3"
-            src="/bottle3.png"
-            width={609}
-            height={598}
-            layout="responsive"
-          />
+      <br />
+      <p>
+        CJC 1295, also known as drug affinity complex: growth hormone-releasing factor (DAC:GRF), is a synthetic analogue of growth hormone-releasing hormone (GHRH). It acts as a growth hormone secretagogue, inducing the secretion of growth hormone. Developed by ConjuChem Biotechnologies, this peptide was initially investigated for lipodystrophy and growth hormone deficiency treatment.
+      </p>
+      <br />
+      <p>
+        CJC 1295 increases plasma growth hormone and insulin-like growth factor one levels in animals. It has a half-life of approximately six to eight hours, with multiple doses sustaining elevated insulin-like growth factor one levels for up to twenty-eight days.
+      </p>
+    </div>
+  </div>
+</div>
 
-          <div className="partition small-text text-gray-900 ml-10">
-            <div className="text-gray-900 small-text-title font-bold">
-              Ipamorelin
-            </div>
-            <br></br>
-            Ipamorelin, whose developmental code name is NNC26-0161, is a
-            peptide selective agonist of the ghrelin or growth hormone
-            secretagogue receptor and is considered to be a growth hormone
-            secret agogue. This means that it binds to the ghrelin or growth
-            hormone secretion receptors and produces more growth hormone through
-            a biological response
-            <br></br>
-            <br></br>
-            Like CJC 1295, Ipamorelin has been proven to increase plasma growth
-            hormone (GH) levels as well as stimulate weight gain. Ipamorelin
-            does not affect prolactin, follicle stimulating hormone, thyroid
-            stimulating hormone, or luteinizing hormone.
-          </div>
-        </div>
+<div className="h-24"></div>
+
+<div className="product-sections">
+  <div className="container mx-auto md:flex gap-[48px] md:justify-between items-center p-4 max-w-[1200px] w-full">
+    <div className="image-container w-full md:w-[609px]">
+      <Image
+        alt="bottle3"
+        src="/bottle3.png"
+        width={609}
+        height={598}
+        layout="responsive"
+        className="object-cover"
+      />
+    </div>
+    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+      <div className="text-gray-900 small-text-title font-bold">
+        Ipamorelin
       </div>
-      <div className="h-24"></div>
+      <br />
+      <p>
+        Ipamorelin, also known as NNC26-0161 during development, is a peptide selective agonist of the growth hormone secretagogue receptor. It binds to these receptors, stimulating the secretion of growth hormone.
+      </p>
+      <br />
+      <p>
+        Like CJC 1295, Ipamorelin increases plasma growth hormone levels and stimulates weight gain without affecting other hormones like prolactin, follicle-stimulating hormone, thyroid-stimulating hormone, or luteinizing hormone.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div className="h-24"></div>
+
+<div className="product-sections last-product">
+  <div className="container mx-auto md:flex md:justify-between gap-[48px] items-center p-4 max-w-[1200px] w-full">
+    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+      <div className="text-gray-900 small-text-title font-bold">
+        Tesamorelin
+      </div>
+      <br />
+      <p>
+        Tesamorelin, an analog of growth hormone-releasing hormone (GHRH), has shown significant clinical efficacy in treating HIV-associated lipodystrophy. It addresses abnormal fat distribution in affected individuals.
+      </p>
+      <br />
+      <p>
+        Researchers are exploring Tesamorelin&apos;s potential to enhance peripheral nerve health and potentially slow the progression of mild cognitive impairment, showcasing its versatility in healthcare.
+      </p>
+    </div>
+    <div className="image-container w-full md:w-[609px]">
+      <Image
+        alt="bottle 4"
+        src="/bottle4.png"
+        width={609}
+        height={598}
+        layout="responsive"
+        className="object-cover"
+      />
+    </div>
+  </div>
+</div>
+
       <div className="product-sections last-product">
-        <div className="container mx-auto md:flex md:justify-between gap-[48px] items-center p-4 max-w-[1200px] w-full">
-          <div className="partition small-text text-gray-900 ml-10">
-            <div className="text-gray-900 small-text-title font-bold">
-              Tesamorelin
-            </div>
-            <br></br>
-            Tesamorelin is a remarkable analog of growth hormone-releasing
-            hormone (GHRH) that has demonstrated significant clinical efficacy
-            in the treatment of HIV-associated lipodystrophy. This condition is
-            characterized by abnormal fat distribution, and Tesamorelin offers
-            hope to individuals affected by addressing dysfunctional fat
-            deposition.
-            <br></br>
-            <br></br>
-            Furthermore, scientists are actively exploring Tesamorelin&apos;s
-            potential to enhance the health of peripheral nerves, a crucial
-            component of our body&apos;s communication network. Additionally,
-            ongoing research suggests that Tesamorelin may have the ability to
-            slow the progression of mild cognitive impairment, highlighting its
-            potential in diverse areas of health and wellness.
-          </div>
-          <Image
-            alt="bottle 4"
-            src="/bottle4.png"
-            width={609}
-            height={598}
-            layout="responsive"
-          />
-        </div>
+  <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+    <div className="image-container w-full md:w-[609px]">
+      <Image
+        alt="bottle5"
+        src="/bottle5.png"
+        width={609}
+        height={598}
+        layout="responsive"
+        className="object-cover"
+      />
+    </div>
+    <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
+      <div className="text-gray-900 small-text-title font-bold">
+        Sermorelin
       </div>
-      <div className="h-24"></div>
-      <div className="product-sections last-product">
-        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <Image
-            alt="bottle5"
-            src="/bottle5.png"
-            width={609}
-            height={598}
-            layout="responsive"
-          />
+      <br></br>
+      <p>
+        Unlocking growth hormone potential, Sermorelin emerges as a
+        groundbreaking growth hormone-releasing hormone (GHRH) analog. While
+        traditionally used to assess growth hormone secretion, Sermorelin has
+        captivated researchers with its remarkable range of capabilities.
+      </p>
+      <br></br>
+      <p>
+        Sermorelin has shown promise in various medical fields, including
+        bolstering bone density and reducing scarring.
+      </p>
+    </div>
+  </div>
+</div>
 
-          <div className="partition small-text text-gray-900 ml-10">
-            <div className="text-gray-900 small-text-title font-bold">
-              Sermorelin
-            </div>
-            <br></br>
-            Unlocking growth hormone potential, Sermorelin emerges as a
-            groundbreaking growth hormone-releasing hormone (GHRH) analog. While
-            traditionally used to assess growth hormone secretion, Sermorelin
-            has captivated researchers with its remarkable range of
-            capabilities.
-            <br></br>
-            <br></br>
-            Sermorelin has shown promise in various medical fields, including
-            bolstering bone density and reducing scarring.
-          </div>
-        </div>
-
-      </div>
       <div className="h-24"></div>
       <div className="bg-blue-50">
         <div className="h-16"></div>
