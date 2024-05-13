@@ -22,7 +22,7 @@ export default function Home() {
               <div className="my-[16px] underline"></div>
               <div className="container mx-auto flex justify-between max-w-[1200px] w-full">
                 <div className="text-gray-900 text-xl pl-0">
-                  Find out what are best peptides for muscle grow.
+                Find out what are best peptides for muscle grow.
                 </div>
               </div>
             </div>
@@ -64,16 +64,14 @@ export default function Home() {
       </div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="max-w-[609px] max-h-[598px] w-full h-full">
-            <Image
-              alt="Bottle 1"
-              src="/bottle1.png"
-              width={609}
-              height={598}
-              layout="responsive"
-            />
-          </div>
-          <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
+          <Image
+            alt="Muscle"
+            src="/bottle1.png"
+            width={609}
+            height={598}
+          />
+
+          <div className="partition small-text text-gray-900 ml-10">
             Understanding peptides is like unveiling the building blocks of
             life:
             <br></br>
@@ -110,9 +108,15 @@ export default function Home() {
         </div>
       </div>
       <div className="h-24"></div>
+      <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
+        <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
+          Peptides for Muscle Growth
+        </div>
+        <div className="my-[16px] underline m-auto"></div>
+      </div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
+          <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
               CJC 1295
             </div>
@@ -135,30 +139,25 @@ export default function Home() {
             investigate it as a treatment for lipodystrophy and growth hormone
             deficiency.
           </div>
-          <div className="max-w-[609px] max-h-[598px] w-full h-full">
-            <Image
-              alt="Bottle 2"
-              src="/bottle2.png"
-              width={609}
-              height={598}
-              layout="responsive"
-            />
-          </div>
+          <Image
+            alt="Muscle"
+            src="/bottle2.png"
+            width={609}
+            height={598}
+          />
         </div>
       </div>
       <div className="h-24"></div>
       <div className="product-sections">
-        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="max-w-[609px] max-h-[598px] w-full h-full">
-            <Image
-              alt="bottle3"
-              src="/bottle3.png"
-              width={609}
-              height={598}
-              layout="responsive"
-            />
-          </div>
-          <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
+        <div className="container mx-auto md:flex gap-[48px] md:justify-between items-center p-4 max-w-[1200px] w-full">
+          <Image
+            alt="bottle3"
+            src="/bottle3.png"
+            width={609}
+            height={598}
+          />
+
+          <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
               Ipamorelin
             </div>
@@ -166,7 +165,7 @@ export default function Home() {
             Ipamorelin, whose developmental code name is NNC26-0161, is a
             peptide selective agonist of the ghrelin or growth hormone
             secretagogue receptor and is considered to be a growth hormone
-            secretagogue. This means that it binds to the ghrelin or growth
+            secret agogue. This means that it binds to the ghrelin or growth
             hormone secretion receptors and produces more growth hormone through
             a biological response
             <br></br>
@@ -179,18 +178,9 @@ export default function Home() {
         </div>
       </div>
       <div className="h-24"></div>
-      <div className="product-sections">
-        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="max-w-[609px] max-h-[598px] w-full h-full">
-            <Image
-              alt="bottle 4"
-              src="/bottle4.png"
-              width={609}
-              height={598}
-              layout="responsive"
-            />
-          </div>
-          <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
+      <div className="product-sections last-product">
+        <div className="container mx-auto md:flex md:justify-between gap-[48px] items-center p-4 max-w-[1200px] w-full">
+          <div className="partition small-text text-gray-900 ml-10">
             <div className="text-gray-900 small-text-title font-bold">
               Tesamorelin
             </div>
@@ -210,42 +200,41 @@ export default function Home() {
             slow the progression of mild cognitive impairment, highlighting its
             potential in diverse areas of health and wellness.
           </div>
+          <Image
+            alt="bottle 4"
+            src="/bottle4.png"
+            width={609}
+            height={598}
+          />
         </div>
       </div>
       <div className="h-24"></div>
-      <div className="product-sections">
+      <div className="product-sections last-product">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="w-full md:w-auto mb-6 md:mb-0 md:max-w-[609px] md:max-h-[598px]">
-            <Image
-              alt="bottle5"
-              src="/bottle5.png"
-              width={609}
-              height={598}
-              layout="responsive"
-              className="object-cover"
-            />
-          </div>
-          <div className="md:w-1/2">
-            <div className="partition small-text text-gray-900 ml-10">
-              <div className="text-gray-900 small-text-title font-bold">
-                Sermorelin
-              </div>
-              <br />
-              <p>
-                Unlocking growth hormone potential, Sermorelin emerges as a
-                groundbreaking growth hormone-releasing hormone (GHRH) analog. While
-                traditionally used to assess growth hormone secretion, Sermorelin
-                has captivated researchers with its remarkable range of
-                capabilities.
-              </p>
-              <br />
-              <p>
-                Sermorelin has shown promise in various medical fields, including
-                bolstering bone density and reducing scarring.
-              </p>
+          <Image
+            alt="bottle5"
+            src="/bottle5.png"
+            width={609}
+            height={598}
+          />
+
+          <div className="partition small-text text-gray-900 ml-10">
+            <div className="text-gray-900 small-text-title font-bold">
+              Sermorelin
             </div>
+            <br></br>
+            Unlocking growth hormone potential, Sermorelin emerges as a
+            groundbreaking growth hormone-releasing hormone (GHRH) analog. While
+            traditionally used to assess growth hormone secretion, Sermorelin
+            has captivated researchers with its remarkable range of
+            capabilities.
+            <br></br>
+            <br></br>
+            Sermorelin has shown promise in various medical fields, including
+            bolstering bone density and reducing scarring.
           </div>
         </div>
+
       </div>
       <div className="h-24"></div>
       <div className="bg-blue-50">
@@ -408,7 +397,7 @@ export default function Home() {
       </div>
       <div className="relative bg-neutral-100 p-7 md:h-[388px]">
         {/* <div className="md:h-60"></div> */}
-        <div className="container mx-auto md:max-w-[998px] lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:border lg:rounded-lg lg:shadow-md lg:shadow-enrollBox lg:text-black lg:bg-white lg:p-5 lg:bottom-1/2">
+        <div className="shadow-md shadow-enrollBox md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-[998px] w-full">
           <EnrollmentForm />
         </div>
         <div className="lg:h-24"></div>
