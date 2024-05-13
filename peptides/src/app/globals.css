@@ -117,11 +117,6 @@ body {
   height: 48px;
 }
 
-.responsive-image {
-  max-width: 609px; /* Set the maximum width for desktop */
-  width: auto; /* Reset width to auto */
-}
-
 
 
 @layer utilities {
