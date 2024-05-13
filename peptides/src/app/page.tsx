@@ -69,6 +69,7 @@ export default function Home() {
             src="/bottle1.png"
             width={609}
             height={598}
+            layout="responsive"
           />
 
           <div className="partition small-text text-gray-900 ml-10">
@@ -144,6 +145,7 @@ export default function Home() {
             src="/bottle2.png"
             width={609}
             height={598}
+            layout="responsive"
           />
         </div>
       </div>
@@ -155,6 +157,7 @@ export default function Home() {
             src="/bottle3.png"
             width={609}
             height={598}
+            layout="responsive"
           />
 
           <div className="partition small-text text-gray-900 ml-10">
@@ -205,6 +208,7 @@ export default function Home() {
             src="/bottle4.png"
             width={609}
             height={598}
+            layout="responsive"
           />
         </div>
       </div>
@@ -216,6 +220,7 @@ export default function Home() {
             src="/bottle5.png"
             width={609}
             height={598}
+            layout="responsive"
           />
 
           <div className="partition small-text text-gray-900 ml-10">
