@@ -64,7 +64,7 @@ export default function Home() {
       </div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="max-w-[609px] max-h-[598px] w-full h-full">
+          <div className="w-full md:w-auto mb-6 md:mb-0 md:max-w-[609px] md:max-h-[598px]">
             <Image
               alt="Bottle 1"
               src="/bottle1.png"
@@ -149,7 +149,7 @@ export default function Home() {
       <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="max-w-[609px] max-h-[598px] w-full h-full">
+          <div className="w-full md:w-auto mb-6 md:mb-0 md:max-w-[609px] md:max-h-[598px]">
             <Image
               alt="bottle3"
               src="/bottle3.png"
@@ -158,30 +158,35 @@ export default function Home() {
               layout="responsive"
             />
           </div>
-          <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
-            <div className="text-gray-900 small-text-title font-bold">
-              Ipamorelin
+          <div className="md:w-1/2">
+            <div className="partition small-text text-gray-900 ml-10">
+              <div className="text-gray-900 small-text-title font-bold">
+                Ipamorelin
+              </div>
+              <br />
+              <p>
+                Ipamorelin, whose developmental code name is NNC26-0161, is a
+                peptide selective agonist of the ghrelin or growth hormone
+                secretagogue receptor and is considered to be a growth hormone
+                secretagogue. This means that it binds to the ghrelin or growth
+                hormone secretion receptors and produces more growth hormone through
+                a biological response
+              </p>
+              <br />
+              <p>
+                Like CJC 1295, Ipamorelin has been proven to increase plasma growth
+                hormone (GH) levels as well as stimulate weight gain. Ipamorelin
+                does not affect prolactin, follicle stimulating hormone, thyroid
+                stimulating hormone, or luteinizing hormone.
+              </p>
             </div>
-            <br></br>
-            Ipamorelin, whose developmental code name is NNC26-0161, is a
-            peptide selective agonist of the ghrelin or growth hormone
-            secretagogue receptor and is considered to be a growth hormone
-            secretagogue. This means that it binds to the ghrelin or growth
-            hormone secretion receptors and produces more growth hormone through
-            a biological response
-            <br></br>
-            <br></br>
-            Like CJC 1295, Ipamorelin has been proven to increase plasma growth
-            hormone (GH) levels as well as stimulate weight gain. Ipamorelin
-            does not affect prolactin, follicle stimulating hormone, thyroid
-            stimulating hormone, or luteinizing hormone.
           </div>
         </div>
       </div>
       <div className="h-24"></div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="max-w-[609px] max-h-[598px] w-full h-full">
+          <div className="w-full md:w-auto mb-6 md:mb-0 md:max-w-[609px] md:max-h-[598px]">
             <Image
               alt="bottle 4"
               src="/bottle4.png"
@@ -190,25 +195,30 @@ export default function Home() {
               layout="responsive"
             />
           </div>
-          <div className="partition small-text text-gray-900 ml-10 md:w-1/2">
-            <div className="text-gray-900 small-text-title font-bold">
-              Tesamorelin
+          <div className="md:w-1/2">
+            <div className="partition small-text text-gray-900 ml-10">
+              <div className="text-gray-900 small-text-title font-bold">
+                Tesamorelin
+              </div>
+              <br />
+              <p>
+                Tesamorelin is a remarkable analog of growth hormone-releasing
+                hormone (GHRH) that has demonstrated significant clinical efficacy
+                in the treatment of HIV-associated lipodystrophy. This condition is
+                characterized by abnormal fat distribution, and Tesamorelin offers
+                hope to individuals affected by addressing dysfunctional fat
+                deposition.
+              </p>
+              <br />
+              <p>
+                Furthermore, scientists are actively exploring Tesamorelin&apos;s
+                potential to enhance the health of peripheral nerves, a crucial
+                component of our body&apos;s communication network. Additionally,
+                ongoing research suggests that Tesamorelin may have the ability to
+                slow the progression of mild cognitive impairment, highlighting its
+                potential in diverse areas of health and wellness.
+              </p>
             </div>
-            <br></br>
-            Tesamorelin is a remarkable analog of growth hormone-releasing
-            hormone (GHRH) that has demonstrated significant clinical efficacy
-            in the treatment of HIV-associated lipodystrophy. This condition is
-            characterized by abnormal fat distribution, and Tesamorelin offers
-            hope to individuals affected by addressing dysfunctional fat
-            deposition.
-            <br></br>
-            <br></br>
-            Furthermore, scientists are actively exploring Tesamorelin&apos;s
-            potential to enhance the health of peripheral nerves, a crucial
-            component of our body&apos;s communication network. Additionally,
-            ongoing research suggests that Tesamorelin may have the ability to
-            slow the progression of mild cognitive impairment, highlighting its
-            potential in diverse areas of health and wellness.
           </div>
         </div>
       </div>
