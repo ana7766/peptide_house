@@ -26,7 +26,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative h-full items w-full select-none sm:max-h-[207px] sm:max-w-[262px] md:max-h-[260px] md:max-w-[328px] lg:max-h-[311px] lg:max-w-[302px] xl:max-h-[311px] xl:max-w-[389px]">
+            <div className="relative md:mb-[65px] h-full items w-full select-none sm:max-h-[207px] sm:max-w-[262px] md:max-h-[260px] md:max-w-[328px] lg:max-h-[311px] lg:max-w-[302px] xl:max-h-[311px] xl:max-w-[389px]">
               <Image
                 alt="Muscle"
                 src="/muscle1.2.png"
