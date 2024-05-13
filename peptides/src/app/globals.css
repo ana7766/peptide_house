@@ -22,19 +22,19 @@ body {
   background-color: white;
   color: black;
   font-family: __Montserrat_b1da2a, __Montserrat_Fallback_b1da2a;
-    font-style: normal;
+  font-style: normal;
 }
 
 .py-\[64px\] {
   padding-top: 64px;
 }
 
-.product-sections{
+.product-sections {
   height: 605px;
   margin-top: 48px;
 }
 
-.last-product{
+.last-product {
   margin-bottom: 48px;
 }
 
@@ -43,9 +43,16 @@ body {
   border-color: rgb(232 244 255 / var(--tw-border-opacity));
 }
 
-.shadow-enrollBox, .shadow-md {
+.shadow-enrollBox,
+.shadow-md {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+.shadow-enrollBox {
+  --tw-shadow: 0px 0px 5px 0px #0000001a;
+  --tw-shadow-colored: 0px 0px 5px 0px var(--tw-shadow-color);
+}
+
 .my-\[16px\] {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -56,7 +63,8 @@ body {
   width: 48px;
 }
 
-.dot, .underline {
+.dot,
+.underline {
   display: block;
   --tw-bg-opacity: 1;
   background-color: rgb(61 155 233 / var(--tw-bg-opacity));
@@ -65,6 +73,7 @@ body {
 .underline {
   text-decoration-line: underline;
 }
+
 .center {
   width: 100%;
 
@@ -115,17 +124,17 @@ body {
     text-wrap: balance;
   }
 }
-@media (max-width: 768px) { 
-  .product-sections{
-  height: fit-content;  
+
+@media (max-width: 768px) {
+  .product-sections {
+    height: fit-content;
   }
 
-  .partition{
+  .partition {
     width: 95%;
   }
 
   .lg\:mt-a {
-    margin-top: 1.25rem; 
+    margin-top: 1.25rem;
   }
- }
-
+}
