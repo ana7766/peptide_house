@@ -121,16 +121,7 @@ export default function Home() {
       </div>
       <div className="product-sections">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-          <div className="image-container w-full md:w-[609px]">
-            <Image
-              alt="Muscle"
-              src="/bottle2.png"
-              width={609}
-              height={598}
-              layout="responsive"
-              className="object-cover"
-            />
-          </div>
+
           <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
             <div className="text-gray-900 small-text-title font-bold">
               CJC 1295
@@ -143,6 +134,16 @@ export default function Home() {
             <p>
               CJC 1295 increases plasma growth hormone and insulin-like growth factor one levels in animals. It has a half-life of approximately six to eight hours, with multiple doses sustaining elevated insulin-like growth factor one levels for up to twenty-eight days.
             </p>
+          </div>
+          <div className="image-container w-full md:w-[609px]">
+            <Image
+              alt="Muscle"
+              src="/bottle2.png"
+              width={609}
+              height={598}
+              layout="responsive"
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
