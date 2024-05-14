@@ -121,6 +121,10 @@ body {
   border-radius: 5px;
 }
 
+.bottom-n20{
+  bottom:-20%;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -128,6 +132,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  body{
+    overflow: hidden;
+  }
   .product-sections {
     height: fit-content;
   }
