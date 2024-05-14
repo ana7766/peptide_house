@@ -180,7 +180,7 @@ export default function Home() {
 
       <div className="h-24"></div>
 
-      <div className="product-sections last-product">
+      <div className="product-sections">
         <div className="container mx-auto md:flex md:justify-between gap-[48px] items-center p-4 max-w-[1200px] w-full">
           <div className="partition small-text text-gray-900 md:ml-10 flex flex-col">
             <div className="text-gray-900 small-text-title font-bold">
@@ -207,6 +207,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="h-24"></div>
 
       <div className="product-sections last-product">
         <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
