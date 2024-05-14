@@ -365,7 +365,7 @@ export default function Home() {
           </div>
           <div className="my-[16px] underline m-auto"></div>
           <CardProvider>
-            <div>
+            <div className="items-center">
               <Card
                 mainText="Types"
                 additionalText="Additional text that will be shown when the + button is clicked."
@@ -398,11 +398,10 @@ export default function Home() {
         </div>
         <div className="my-[16px] underline m-auto"></div>
       </div>
-      <div className="relative bg-neutral-100 p-7 md:h-[388px]">
-        {/* <div className="md:h-60"></div> */}
-        <div className="shadow-md shadow-enrollBox md:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-[998px] w-full">
-          <EnrollmentForm />
-        </div>
+      <div className="relative bg-neutral-100 p-7 md:h-[388px]">     
+      <div className="shadow-md shadow-enrollBox absolute left-0 right-0 md:left-1/2 md:transform md:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-full lg:max-w-[998px] w-full">
+    <EnrollmentForm />
+  </div>
         <div className="lg:h-24"></div>
         <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
           <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-[1200px] w-full">
