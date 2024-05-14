@@ -11,7 +11,7 @@ function scrollToElement(id: string) {
 
 const EnrollNowBanner = () => {
   return (
-    <div className='border-b-[3px] border-solid border-gray-100'>
+    <div className='min-h-[95px] border-b-[3px] border-solid border-gray-100'>
       <div className="container mx-auto flex justify-between items-center p-4 max-w-[1003.5px] max-h-[95px] w-full h-full">
         <div className="container mx-auto mid-size-text font-bold text-gray-300 flex items-center">
           Enroll now to discover a comprehensive list of peptides

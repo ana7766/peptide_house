@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <div>
         <div
-          className="overflow-hidden center md:max-h flex items-center justify-center border-b-[10px] border-t-[5px] border-solid border-light-blue2 sm:py-[40px] md:py-[40px] lg:max-h-[420px] lg:py-[97px] xl:max-h-[420px] xl:py-[62px]"
+          className="min-h-[435px] mid-size-text overflow-hidden center md:max-h flex items-center justify-center border-b-[10px] border-t-[5px] border-solid border-light-blue2 sm:py-[40px] md:py-[40px] lg:max-h-[420px] lg:py-[97px] xl:max-h-[420px] xl:py-[62px]"
           style={{ backgroundImage: 'url("/layer1.png")' }}>
           <div className="container mx-auto flex justify-between items-center max-w-[1200px] w-full">
             <div className="center-text">
@@ -361,7 +361,7 @@ export default function Home() {
       </div>
       <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
         <div className="h-16"></div>
-        <div className="h-96">
+        <div className="h-[343px]">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
             FAQ&apos;s
           </div>
