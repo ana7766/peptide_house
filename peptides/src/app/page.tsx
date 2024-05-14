@@ -366,6 +366,7 @@ export default function Home() {
             FAQ&apos;s
           </div>
           <div className="my-[16px] underline m-auto"></div>
+          <div className="mb-9"></div>
           <CardProvider>
             <div className="items-center">
               <Card
