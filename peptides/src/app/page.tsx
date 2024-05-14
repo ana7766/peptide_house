@@ -63,54 +63,54 @@ export default function Home() {
         </div>
       </div>
       <div className="product-sections">
-  <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
-    <div className="image-container w-full md:w-[609px]">
-      <Image
-        alt="Muscle"
-        src="/bottle1.png"
-        width={609}
-        height={598}
-        layout="responsive"
-      />
-    </div>
-    <div className="partition small-text text-gray-900 ml-10">
-      <p>
-        Understanding peptides is like unveiling the building blocks of life:
-      </p>
-      <br />
-      <ul className="list-none">
-        <li className="flex items-center">
-          <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
-          <span>Amino acids stand alone as individual molecules.</span>
-        </li>
-        <br />
-        <li className="flex items-center">
-          <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
-          <span>
-            Peptides, on the other hand, are usually short chains, ranging from
-            2 to 50 amino acids.
-          </span>
-        </li>
-        <br />
-        <li className="flex items-center">
-          <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
-          <span>
-            Proteins, the heavyweight champions, are generally long chains,
-            packing in 50 or more amino acids.
-          </span>
-        </li>
-      </ul>
-      <br />
-      <br />
-      <p>
-        Now, here&apos;s a surprising fact: while some may see peptides as
-        uncharted territory in alternative medicine, they&apos;ve been life-saving
-        heroes for over a century. Think about insulin and penicillin – both
-        peptides that have brought invaluable benefits to modern society.
-      </p>
-    </div>
-  </div>
-</div>
+        <div className="container mx-auto gap-[48px] md:flex md:justify-between items-center p-4 max-w-[1200px] w-full">
+          <div className="image-container w-full md:w-[609px]">
+            <Image
+              alt="Muscle"
+              src="/bottle1.png"
+              width={609}
+              height={598}
+              layout="responsive"
+            />
+          </div>
+          <div className="partition small-text text-gray-900 ml-10">
+            <p>
+              Understanding peptides is like unveiling the building blocks of life:
+            </p>
+            <br />
+            <ul className="list-none">
+              <li className="flex items-center">
+                <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>Amino acids stand alone as individual molecules.</span>
+              </li>
+              <br />
+              <li className="flex items-center">
+                <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>
+                  Peptides, on the other hand, are usually short chains, ranging from
+                  2 to 50 amino acids.
+                </span>
+              </li>
+              <br />
+              <li className="flex items-center">
+                <span className="dot h-2 w-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>
+                  Proteins, the heavyweight champions, are generally long chains,
+                  packing in 50 or more amino acids.
+                </span>
+              </li>
+            </ul>
+            <br />
+            <br />
+            <p>
+              Now, here&apos;s a surprising fact: while some may see peptides as
+              uncharted territory in alternative medicine, they&apos;ve been life-saving
+              heroes for over a century. Think about insulin and penicillin – both
+              peptides that have brought invaluable benefits to modern society.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div className="h-24"></div>
       <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
@@ -398,10 +398,10 @@ export default function Home() {
         </div>
         <div className="my-[16px] underline m-auto"></div>
       </div>
-      <div className="relative bg-neutral-100 p-7 md:h-[388px]">     
-      <div className="shadow-md shadow-enrollBox absolute left-0 right-0 md:left-1/2 md:transform md:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-full lg:max-w-[998px] w-full">
-    <EnrollmentForm />
-  </div>
+      <div className="relative bg-neutral-100 p-7 md:h-[388px]">
+        <div className="shadow-md shadow-enrollBox absolute left-0 right-0 md:left-1/2 md:transform md:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-full lg:max-w-[998px] w-full">
+          <EnrollmentForm />
+        </div>
         <div className="lg:h-24"></div>
         <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
           <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-[1200px] w-full">
