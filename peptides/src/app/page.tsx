@@ -393,7 +393,7 @@ export default function Home() {
           </CardProvider>
         </div>
       </div>
-      <div className="md:pb-32 md:mb-14">
+      <div className="lg:pb-32 lg:mb-14">
         <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold" id="enrollPartition">
             Enroll now
@@ -401,12 +401,15 @@ export default function Home() {
         </div>
         <div className="my-[16px] underline m-auto"></div>
       </div>
-      <div className="relative bg-neutral-100 p-7 md:h-[388px]">
-        <div className="shadow-md shadow-enrollBox absolute left-0 right-0 md:left-1/2 md:transform md:-translate-x-1/2 border rounded-lg text-black bg-white p-5 md:bottom-48 lg:bottom-1/2 max-w-full lg:max-w-[998px] w-full">
-          <EnrollmentForm />
+      <div className="bg-neutral-100 p-7">
+        <div className="mx-auto p-4 max-w-[1200px] min-h-[150px] w-full">
+          <div className="relative max-w-[998px] w-full min-h-[150px] h-full mx-auto items-center">
+            <div className="lg:absolute bottom-n20 shadow-md shadow-enrollBox border rounded-lg text-black bg-white p-5 max-w-full">
+              <EnrollmentForm />
+            </div>
+          </div>
         </div>
-        <div className="lg:h-24"></div>
-        <div className="md:absolute bottom-0 left-0 right-0 p-4 w-full">
+        <div className="p-4 w-full">
           <div className="flex flex-wrap justify-between items-start container mx-auto p-4 max-w-[1200px] w-full">
             <div className="w-full md:w-1/4 text-left float-start">
               <Image src="/logo.png" alt="Logo" width={263} height={31} />
