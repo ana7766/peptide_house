@@ -121,8 +121,8 @@ body {
   border-radius: 5px;
 }
 
-.bottom-n20{
-  bottom:-20%;
+.bottom-n20 {
+  bottom: -20%;
 }
 
 @layer utilities {
@@ -132,9 +132,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  body{
+  body {
     overflow-x: hidden;
   }
+
   .product-sections {
     height: fit-content;
   }
@@ -145,5 +146,21 @@ body {
 
   .lg\:mt-a {
     margin-top: 1.25rem;
+  }
+
+  .small-text {
+    font-size: 14px;
+  }
+
+  .small-text-title {
+    font-size: 18px;
+  }
+
+  .mid-size-text {
+    font-size: 25px;
+  }
+
+  .center-text {
+    font-size: 40px;
   }
 }
