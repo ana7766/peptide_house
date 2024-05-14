@@ -25,7 +25,7 @@ const EnrollmentForm: React.FC = () => {
     e.preventDefault();
     try {
       await EnrollmentFormSchema.parseAsync(formData);
-      setError(""); // Clear any previous errors
+      setError("");
       console.log("Form data:", formData);
       console.log("Form submitted successfully!");
     } catch (err) {
