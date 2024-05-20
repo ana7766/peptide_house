@@ -405,7 +405,7 @@ export default function Home() {
       <div className="bg-neutral-100 p-7">
         <div className="mx-auto p-4 max-w-[1200px] min-h-[150px] w-full">
           <div className="relative max-w-[998px] w-full min-h-[150px] h-full mx-auto items-center">
-            <div className="lg:absolute bottom-n20 shadow-md shadow-enrollBox border rounded-lg text-black bg-white p-5 max-w-full">
+            <div className="lg:absolute bottom-n20 shadow-md shadow-enrollBox border rounded-lg text-black bg-white p-5 max-w-full lg:h-[299px] h-auto">
               <EnrollmentForm />
             </div>
           </div>

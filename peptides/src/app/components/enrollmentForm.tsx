@@ -65,7 +65,7 @@ const EnrollmentFormSchema = z.object({
   <div className="text-center mb-5 text-base">
     Enroll now to discover a comprehensive list of peptides for muscle mass. Empower your journey toward optimal health. <span className="font-bold">Join us today!</span>
   </div>
-  <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-[16px] pt-[32px] sm:flex-col">
+  <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-[16px] pt-[16px] sm:flex-col">
     <div className="relative w-full sm:w-full md:w-1/3">
       <input
         type="text"
@@ -122,7 +122,7 @@ const EnrollmentFormSchema = z.object({
     </div>
   </div>
   {error && <div className="text-red-500 text-sm mb-2">{error}</div>}
-  <div className="flex justify-center mt-5">
+  <div className="flex justify-center mt-[8px]">
     <button
       className="bg-blue-500 text-white rounded-lg py-3 px-12"
       type="submit"
@@ -130,7 +130,7 @@ const EnrollmentFormSchema = z.object({
       Get Started
     </button>
   </div>
-  <div className="text-center mt-5 text-base">
+  <div className="text-center mt-[8px] text-base">
     After subscribing you will receive a comprehensive list of all peptides available
   </div>
 </form>
