@@ -394,7 +394,7 @@ export default function Home() {
         </div>
       </div>
       <div className="h-16"></div>
-      <div className="lg:pb-32">
+      <div className="lg:pb-36">
         <div className="container mx-auto items-center p-2 max-w-[1200px] w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold" id="enrollPartition">
             Enroll now
