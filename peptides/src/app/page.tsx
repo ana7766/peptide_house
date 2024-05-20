@@ -242,7 +242,7 @@ export default function Home() {
       </div>
 
       <div className="h-24"></div>
-      <div className="bg-blue-50">
+      <div className="bg-blue-50 lg:h-[775px] h-auto">
         <div className="h-16"></div>
         <div className="container mx-auto items-center max-w-[1200px] w-full">
           <div className="text-gray-600 items-center w-full text-center mid-size-text font-bold">
@@ -250,7 +250,7 @@ export default function Home() {
           </div>
         </div>
         <div className="my-[16px] underline m-auto"></div>
-        <div className="container mx-auto flex justify-between items-center p-4 max-w-[1200px] w-full">
+        <div className="container mx-auto flex justify-between items-center max-w-[1200px] w-full">
           <div className="small-text text-gray-900 mb-[48px]">
             Peptides play a pivotal role in enhancing muscle growth and overall
             well-being. The thoughtful integration of innovative peptides, such
@@ -429,7 +429,7 @@ export default function Home() {
                   <div className="text-gray-900 small-text-title font-bold">
                     Links
                   </div>
-                  Telephone <br />Email
+                  Telephone <div className="mt-4">Email</div>
                 </div>
               </div>
             </div>

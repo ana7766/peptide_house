@@ -30,8 +30,8 @@ body {
 }
 
 .product-sections {
-  height: 605px;
-  margin-top: 48px;
+  min-height: 685px;
+  /* margin-top: 48px; */
 }
 
 .last-product {
